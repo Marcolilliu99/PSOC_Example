@@ -1,0 +1,512 @@
+ARM GAS  C:\Users\marco\AppData\Local\Temp\cc9gtMgu.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"main.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.main,"ax",%progbits
+  20              		.align	2
+  21              		.global	main
+  22              		.thumb
+  23              		.thumb_func
+  24              		.type	main, %function
+  25              	main:
+  26              	.LFB64:
+  27              		.file 1 "main.c"
+   1:main.c        **** /* ========================================
+   2:main.c        ****  *
+   3:main.c        ****  * Copyright YOUR COMPANY, THE YEAR
+   4:main.c        ****  * All Rights Reserved
+   5:main.c        ****  * UNPUBLISHED, LICENSED SOFTWARE.
+   6:main.c        ****  *
+   7:main.c        ****  * CONFIDENTIAL AND PROPRIETARY INFORMATION
+   8:main.c        ****  * WHICH IS THE PROPERTY OF your company.
+   9:main.c        ****  *
+  10:main.c        ****  * ========================================
+  11:main.c        **** */
+  12:main.c        **** #include "project.h"
+  13:main.c        **** #include "ISR_TIMER.h"
+  14:main.c        **** 
+  15:main.c        **** int main(void)
+  16:main.c        **** {
+  28              		.loc 1 16 0
+  29              		.cfi_startproc
+  30              		@ Volatile: function does not return.
+  31              		@ args = 0, pretend = 0, frame = 0
+  32              		@ frame_needed = 0, uses_anonymous_args = 0
+  33 0000 08B5     		push	{r3, lr}
+  34              		.cfi_def_cfa_offset 8
+  35              		.cfi_offset 3, -8
+  36              		.cfi_offset 14, -4
+  17:main.c        ****     CyGlobalIntEnable; /* Enable global interrupts. */
+  37              		.loc 1 17 0
+  38              		.syntax unified
+  39              	@ 17 "main.c" 1
+  40 0002 62B6     		CPSIE   i
+ARM GAS  C:\Users\marco\AppData\Local\Temp\cc9gtMgu.s 			page 2
+
+
+  41              	@ 0 "" 2
+  18:main.c        **** 
+  19:main.c        ****     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
+  20:main.c        ****     TIMER_Start();
+  42              		.loc 1 20 0
+  43              		.thumb
+  44              		.syntax unified
+  45 0004 FFF7FEFF 		bl	TIMER_Start
+  46              	.LVL0:
+  21:main.c        ****     INT_TIMER_StartEx(Custom_ISR_TIMER);
+  47              		.loc 1 21 0
+  48 0008 0148     		ldr	r0, .L4
+  49 000a FFF7FEFF 		bl	INT_TIMER_StartEx
+  50              	.LVL1:
+  51              	.L2:
+  52 000e FEE7     		b	.L2
+  53              	.L5:
+  54              		.align	2
+  55              	.L4:
+  56 0010 00000000 		.word	Custom_ISR_TIMER
+  57              		.cfi_endproc
+  58              	.LFE64:
+  59              		.size	main, .-main
+  60              		.text
+  61              	.Letext0:
+  62              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+  63              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+  64              		.file 4 "Generated_Source\\PSoC5/TIMER.h"
+  65              		.file 5 "Generated_Source\\PSoC5/INT_TIMER.h"
+  66              		.file 6 "Generated_Source\\PSoC5/core_cm3.h"
+  67              		.section	.debug_info,"",%progbits
+  68              	.Ldebug_info0:
+  69 0000 F4000000 		.4byte	0xf4
+  70 0004 0400     		.2byte	0x4
+  71 0006 00000000 		.4byte	.Ldebug_abbrev0
+  72 000a 04       		.byte	0x4
+  73 000b 01       		.uleb128 0x1
+  74 000c 3A000000 		.4byte	.LASF18
+  75 0010 0C       		.byte	0xc
+  76 0011 2E000000 		.4byte	.LASF19
+  77 0015 32010000 		.4byte	.LASF20
+  78 0019 00000000 		.4byte	.Ldebug_ranges0+0
+  79 001d 00000000 		.4byte	0
+  80 0021 00000000 		.4byte	.Ldebug_line0
+  81 0025 02       		.uleb128 0x2
+  82 0026 01       		.byte	0x1
+  83 0027 06       		.byte	0x6
+  84 0028 8D010000 		.4byte	.LASF0
+  85 002c 02       		.uleb128 0x2
+  86 002d 01       		.byte	0x1
+  87 002e 08       		.byte	0x8
+  88 002f 0F010000 		.4byte	.LASF1
+  89 0033 02       		.uleb128 0x2
+  90 0034 02       		.byte	0x2
+  91 0035 05       		.byte	0x5
+  92 0036 B5010000 		.4byte	.LASF2
+  93 003a 02       		.uleb128 0x2
+ARM GAS  C:\Users\marco\AppData\Local\Temp\cc9gtMgu.s 			page 3
+
+
+  94 003b 02       		.byte	0x2
+  95 003c 07       		.byte	0x7
+  96 003d 0E000000 		.4byte	.LASF3
+  97 0041 03       		.uleb128 0x3
+  98 0042 A5010000 		.4byte	.LASF9
+  99 0046 02       		.byte	0x2
+ 100 0047 3F       		.byte	0x3f
+ 101 0048 4C000000 		.4byte	0x4c
+ 102 004c 02       		.uleb128 0x2
+ 103 004d 04       		.byte	0x4
+ 104 004e 05       		.byte	0x5
+ 105 004f 22010000 		.4byte	.LASF4
+ 106 0053 02       		.uleb128 0x2
+ 107 0054 04       		.byte	0x4
+ 108 0055 07       		.byte	0x7
+ 109 0056 D4000000 		.4byte	.LASF5
+ 110 005a 02       		.uleb128 0x2
+ 111 005b 08       		.byte	0x8
+ 112 005c 05       		.byte	0x5
+ 113 005d 00000000 		.4byte	.LASF6
+ 114 0061 02       		.uleb128 0x2
+ 115 0062 08       		.byte	0x8
+ 116 0063 07       		.byte	0x7
+ 117 0064 E6000000 		.4byte	.LASF7
+ 118 0068 04       		.uleb128 0x4
+ 119 0069 04       		.byte	0x4
+ 120 006a 05       		.byte	0x5
+ 121 006b 696E7400 		.ascii	"int\000"
+ 122 006f 02       		.uleb128 0x2
+ 123 0070 04       		.byte	0x4
+ 124 0071 07       		.byte	0x7
+ 125 0072 21000000 		.4byte	.LASF8
+ 126 0076 03       		.uleb128 0x3
+ 127 0077 BF010000 		.4byte	.LASF10
+ 128 007b 03       		.byte	0x3
+ 129 007c 2C       		.byte	0x2c
+ 130 007d 41000000 		.4byte	0x41
+ 131 0081 02       		.uleb128 0x2
+ 132 0082 04       		.byte	0x4
+ 133 0083 04       		.byte	0x4
+ 134 0084 AF010000 		.4byte	.LASF11
+ 135 0088 02       		.uleb128 0x2
+ 136 0089 08       		.byte	0x8
+ 137 008a 04       		.byte	0x4
+ 138 008b 2B010000 		.4byte	.LASF12
+ 139 008f 02       		.uleb128 0x2
+ 140 0090 01       		.byte	0x1
+ 141 0091 08       		.byte	0x8
+ 142 0092 1D010000 		.4byte	.LASF13
+ 143 0096 02       		.uleb128 0x2
+ 144 0097 08       		.byte	0x8
+ 145 0098 04       		.byte	0x4
+ 146 0099 99010000 		.4byte	.LASF14
+ 147 009d 02       		.uleb128 0x2
+ 148 009e 04       		.byte	0x4
+ 149 009f 07       		.byte	0x7
+ 150 00a0 C7010000 		.4byte	.LASF15
+ARM GAS  C:\Users\marco\AppData\Local\Temp\cc9gtMgu.s 			page 4
+
+
+ 151 00a4 05       		.uleb128 0x5
+ 152 00a5 35000000 		.4byte	.LASF21
+ 153 00a9 01       		.byte	0x1
+ 154 00aa 0F       		.byte	0xf
+ 155 00ab 68000000 		.4byte	0x68
+ 156 00af 00000000 		.4byte	.LFB64
+ 157 00b3 14000000 		.4byte	.LFE64-.LFB64
+ 158 00b7 01       		.uleb128 0x1
+ 159 00b8 9C       		.byte	0x9c
+ 160 00b9 D0000000 		.4byte	0xd0
+ 161 00bd 06       		.uleb128 0x6
+ 162 00be 08000000 		.4byte	.LVL0
+ 163 00c2 E1000000 		.4byte	0xe1
+ 164 00c6 06       		.uleb128 0x6
+ 165 00c7 0E000000 		.4byte	.LVL1
+ 166 00cb EC000000 		.4byte	0xec
+ 167 00cf 00       		.byte	0
+ 168 00d0 07       		.uleb128 0x7
+ 169 00d1 80010000 		.4byte	.LASF22
+ 170 00d5 06       		.byte	0x6
+ 171 00d6 1207     		.2byte	0x712
+ 172 00d8 DC000000 		.4byte	0xdc
+ 173 00dc 08       		.uleb128 0x8
+ 174 00dd 76000000 		.4byte	0x76
+ 175 00e1 09       		.uleb128 0x9
+ 176 00e2 C8000000 		.4byte	.LASF16
+ 177 00e6 C8000000 		.4byte	.LASF16
+ 178 00ea 04       		.byte	0x4
+ 179 00eb 5A       		.byte	0x5a
+ 180 00ec 09       		.uleb128 0x9
+ 181 00ed FD000000 		.4byte	.LASF17
+ 182 00f1 FD000000 		.4byte	.LASF17
+ 183 00f5 05       		.byte	0x5
+ 184 00f6 18       		.byte	0x18
+ 185 00f7 00       		.byte	0
+ 186              		.section	.debug_abbrev,"",%progbits
+ 187              	.Ldebug_abbrev0:
+ 188 0000 01       		.uleb128 0x1
+ 189 0001 11       		.uleb128 0x11
+ 190 0002 01       		.byte	0x1
+ 191 0003 25       		.uleb128 0x25
+ 192 0004 0E       		.uleb128 0xe
+ 193 0005 13       		.uleb128 0x13
+ 194 0006 0B       		.uleb128 0xb
+ 195 0007 03       		.uleb128 0x3
+ 196 0008 0E       		.uleb128 0xe
+ 197 0009 1B       		.uleb128 0x1b
+ 198 000a 0E       		.uleb128 0xe
+ 199 000b 55       		.uleb128 0x55
+ 200 000c 17       		.uleb128 0x17
+ 201 000d 11       		.uleb128 0x11
+ 202 000e 01       		.uleb128 0x1
+ 203 000f 10       		.uleb128 0x10
+ 204 0010 17       		.uleb128 0x17
+ 205 0011 00       		.byte	0
+ 206 0012 00       		.byte	0
+ 207 0013 02       		.uleb128 0x2
+ARM GAS  C:\Users\marco\AppData\Local\Temp\cc9gtMgu.s 			page 5
+
+
+ 208 0014 24       		.uleb128 0x24
+ 209 0015 00       		.byte	0
+ 210 0016 0B       		.uleb128 0xb
+ 211 0017 0B       		.uleb128 0xb
+ 212 0018 3E       		.uleb128 0x3e
+ 213 0019 0B       		.uleb128 0xb
+ 214 001a 03       		.uleb128 0x3
+ 215 001b 0E       		.uleb128 0xe
+ 216 001c 00       		.byte	0
+ 217 001d 00       		.byte	0
+ 218 001e 03       		.uleb128 0x3
+ 219 001f 16       		.uleb128 0x16
+ 220 0020 00       		.byte	0
+ 221 0021 03       		.uleb128 0x3
+ 222 0022 0E       		.uleb128 0xe
+ 223 0023 3A       		.uleb128 0x3a
+ 224 0024 0B       		.uleb128 0xb
+ 225 0025 3B       		.uleb128 0x3b
+ 226 0026 0B       		.uleb128 0xb
+ 227 0027 49       		.uleb128 0x49
+ 228 0028 13       		.uleb128 0x13
+ 229 0029 00       		.byte	0
+ 230 002a 00       		.byte	0
+ 231 002b 04       		.uleb128 0x4
+ 232 002c 24       		.uleb128 0x24
+ 233 002d 00       		.byte	0
+ 234 002e 0B       		.uleb128 0xb
+ 235 002f 0B       		.uleb128 0xb
+ 236 0030 3E       		.uleb128 0x3e
+ 237 0031 0B       		.uleb128 0xb
+ 238 0032 03       		.uleb128 0x3
+ 239 0033 08       		.uleb128 0x8
+ 240 0034 00       		.byte	0
+ 241 0035 00       		.byte	0
+ 242 0036 05       		.uleb128 0x5
+ 243 0037 2E       		.uleb128 0x2e
+ 244 0038 01       		.byte	0x1
+ 245 0039 3F       		.uleb128 0x3f
+ 246 003a 19       		.uleb128 0x19
+ 247 003b 03       		.uleb128 0x3
+ 248 003c 0E       		.uleb128 0xe
+ 249 003d 3A       		.uleb128 0x3a
+ 250 003e 0B       		.uleb128 0xb
+ 251 003f 3B       		.uleb128 0x3b
+ 252 0040 0B       		.uleb128 0xb
+ 253 0041 27       		.uleb128 0x27
+ 254 0042 19       		.uleb128 0x19
+ 255 0043 49       		.uleb128 0x49
+ 256 0044 13       		.uleb128 0x13
+ 257 0045 8701     		.uleb128 0x87
+ 258 0047 19       		.uleb128 0x19
+ 259 0048 11       		.uleb128 0x11
+ 260 0049 01       		.uleb128 0x1
+ 261 004a 12       		.uleb128 0x12
+ 262 004b 06       		.uleb128 0x6
+ 263 004c 40       		.uleb128 0x40
+ 264 004d 18       		.uleb128 0x18
+ARM GAS  C:\Users\marco\AppData\Local\Temp\cc9gtMgu.s 			page 6
+
+
+ 265 004e 9742     		.uleb128 0x2117
+ 266 0050 19       		.uleb128 0x19
+ 267 0051 01       		.uleb128 0x1
+ 268 0052 13       		.uleb128 0x13
+ 269 0053 00       		.byte	0
+ 270 0054 00       		.byte	0
+ 271 0055 06       		.uleb128 0x6
+ 272 0056 898201   		.uleb128 0x4109
+ 273 0059 00       		.byte	0
+ 274 005a 11       		.uleb128 0x11
+ 275 005b 01       		.uleb128 0x1
+ 276 005c 31       		.uleb128 0x31
+ 277 005d 13       		.uleb128 0x13
+ 278 005e 00       		.byte	0
+ 279 005f 00       		.byte	0
+ 280 0060 07       		.uleb128 0x7
+ 281 0061 34       		.uleb128 0x34
+ 282 0062 00       		.byte	0
+ 283 0063 03       		.uleb128 0x3
+ 284 0064 0E       		.uleb128 0xe
+ 285 0065 3A       		.uleb128 0x3a
+ 286 0066 0B       		.uleb128 0xb
+ 287 0067 3B       		.uleb128 0x3b
+ 288 0068 05       		.uleb128 0x5
+ 289 0069 49       		.uleb128 0x49
+ 290 006a 13       		.uleb128 0x13
+ 291 006b 3F       		.uleb128 0x3f
+ 292 006c 19       		.uleb128 0x19
+ 293 006d 3C       		.uleb128 0x3c
+ 294 006e 19       		.uleb128 0x19
+ 295 006f 00       		.byte	0
+ 296 0070 00       		.byte	0
+ 297 0071 08       		.uleb128 0x8
+ 298 0072 35       		.uleb128 0x35
+ 299 0073 00       		.byte	0
+ 300 0074 49       		.uleb128 0x49
+ 301 0075 13       		.uleb128 0x13
+ 302 0076 00       		.byte	0
+ 303 0077 00       		.byte	0
+ 304 0078 09       		.uleb128 0x9
+ 305 0079 2E       		.uleb128 0x2e
+ 306 007a 00       		.byte	0
+ 307 007b 3F       		.uleb128 0x3f
+ 308 007c 19       		.uleb128 0x19
+ 309 007d 3C       		.uleb128 0x3c
+ 310 007e 19       		.uleb128 0x19
+ 311 007f 6E       		.uleb128 0x6e
+ 312 0080 0E       		.uleb128 0xe
+ 313 0081 03       		.uleb128 0x3
+ 314 0082 0E       		.uleb128 0xe
+ 315 0083 3A       		.uleb128 0x3a
+ 316 0084 0B       		.uleb128 0xb
+ 317 0085 3B       		.uleb128 0x3b
+ 318 0086 0B       		.uleb128 0xb
+ 319 0087 00       		.byte	0
+ 320 0088 00       		.byte	0
+ 321 0089 00       		.byte	0
+ARM GAS  C:\Users\marco\AppData\Local\Temp\cc9gtMgu.s 			page 7
+
+
+ 322              		.section	.debug_aranges,"",%progbits
+ 323 0000 1C000000 		.4byte	0x1c
+ 324 0004 0200     		.2byte	0x2
+ 325 0006 00000000 		.4byte	.Ldebug_info0
+ 326 000a 04       		.byte	0x4
+ 327 000b 00       		.byte	0
+ 328 000c 0000     		.2byte	0
+ 329 000e 0000     		.2byte	0
+ 330 0010 00000000 		.4byte	.LFB64
+ 331 0014 14000000 		.4byte	.LFE64-.LFB64
+ 332 0018 00000000 		.4byte	0
+ 333 001c 00000000 		.4byte	0
+ 334              		.section	.debug_ranges,"",%progbits
+ 335              	.Ldebug_ranges0:
+ 336 0000 00000000 		.4byte	.LFB64
+ 337 0004 14000000 		.4byte	.LFE64
+ 338 0008 00000000 		.4byte	0
+ 339 000c 00000000 		.4byte	0
+ 340              		.section	.debug_line,"",%progbits
+ 341              	.Ldebug_line0:
+ 342 0000 71010000 		.section	.debug_str,"MS",%progbits,1
+ 342      02005901 
+ 342      00000201 
+ 342      FB0E0D00 
+ 342      01010101 
+ 343              	.LASF6:
+ 344 0000 6C6F6E67 		.ascii	"long long int\000"
+ 344      206C6F6E 
+ 344      6720696E 
+ 344      7400
+ 345              	.LASF3:
+ 346 000e 73686F72 		.ascii	"short unsigned int\000"
+ 346      7420756E 
+ 346      7369676E 
+ 346      65642069 
+ 346      6E7400
+ 347              	.LASF8:
+ 348 0021 756E7369 		.ascii	"unsigned int\000"
+ 348      676E6564 
+ 348      20696E74 
+ 348      00
+ 349              	.LASF19:
+ 350 002e 6D61696E 		.ascii	"main.c\000"
+ 350      2E6300
+ 351              	.LASF21:
+ 352 0035 6D61696E 		.ascii	"main\000"
+ 352      00
+ 353              	.LASF18:
+ 354 003a 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 354      43313120 
+ 354      352E342E 
+ 354      31203230 
+ 354      31363036 
+ 355 006d 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 355      20726576 
+ 355      6973696F 
+ 355      6E203233 
+ARM GAS  C:\Users\marco\AppData\Local\Temp\cc9gtMgu.s 			page 8
+
+
+ 355      37373135 
+ 356 00a0 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 356      66756E63 
+ 356      74696F6E 
+ 356      2D736563 
+ 356      74696F6E 
+ 357              	.LASF16:
+ 358 00c8 54494D45 		.ascii	"TIMER_Start\000"
+ 358      525F5374 
+ 358      61727400 
+ 359              	.LASF5:
+ 360 00d4 6C6F6E67 		.ascii	"long unsigned int\000"
+ 360      20756E73 
+ 360      69676E65 
+ 360      6420696E 
+ 360      7400
+ 361              	.LASF7:
+ 362 00e6 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 362      206C6F6E 
+ 362      6720756E 
+ 362      7369676E 
+ 362      65642069 
+ 363              	.LASF17:
+ 364 00fd 494E545F 		.ascii	"INT_TIMER_StartEx\000"
+ 364      54494D45 
+ 364      525F5374 
+ 364      61727445 
+ 364      7800
+ 365              	.LASF1:
+ 366 010f 756E7369 		.ascii	"unsigned char\000"
+ 366      676E6564 
+ 366      20636861 
+ 366      7200
+ 367              	.LASF13:
+ 368 011d 63686172 		.ascii	"char\000"
+ 368      00
+ 369              	.LASF4:
+ 370 0122 6C6F6E67 		.ascii	"long int\000"
+ 370      20696E74 
+ 370      00
+ 371              	.LASF12:
+ 372 012b 646F7562 		.ascii	"double\000"
+ 372      6C6500
+ 373              	.LASF20:
+ 374 0132 433A5C55 		.ascii	"C:\\Users\\marco\\OneDrive\\Documenti\\PSoC Creator"
+ 374      73657273 
+ 374      5C6D6172 
+ 374      636F5C4F 
+ 374      6E654472 
+ 375 0160 5C50726F 		.ascii	"\\Prove_PSOC\\LED_INTERRUPT.cydsn\000"
+ 375      76655F50 
+ 375      534F435C 
+ 375      4C45445F 
+ 375      494E5445 
+ 376              	.LASF22:
+ 377 0180 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 377      52784275 
+ARM GAS  C:\Users\marco\AppData\Local\Temp\cc9gtMgu.s 			page 9
+
+
+ 377      66666572 
+ 377      00
+ 378              	.LASF0:
+ 379 018d 7369676E 		.ascii	"signed char\000"
+ 379      65642063 
+ 379      68617200 
+ 380              	.LASF14:
+ 381 0199 6C6F6E67 		.ascii	"long double\000"
+ 381      20646F75 
+ 381      626C6500 
+ 382              	.LASF9:
+ 383 01a5 5F5F696E 		.ascii	"__int32_t\000"
+ 383      7433325F 
+ 383      7400
+ 384              	.LASF11:
+ 385 01af 666C6F61 		.ascii	"float\000"
+ 385      7400
+ 386              	.LASF2:
+ 387 01b5 73686F72 		.ascii	"short int\000"
+ 387      7420696E 
+ 387      7400
+ 388              	.LASF10:
+ 389 01bf 696E7433 		.ascii	"int32_t\000"
+ 389      325F7400 
+ 390              	.LASF15:
+ 391 01c7 73697A65 		.ascii	"sizetype\000"
+ 391      74797065 
+ 391      00
+ 392              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
