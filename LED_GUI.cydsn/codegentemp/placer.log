@@ -6,7 +6,7 @@
 
 #Build Date:         Sep  9 2019 11:47:43
 
-#File Generated:     Nov 6 2022 16:59:45
+#File Generated:     Nov 6 2022 18:45:16
 
 #Purpose:            
 
@@ -44,18 +44,18 @@ Phase 2
 Phase 3
 
 Design Statistics after Packing
-    Number of Combinational MCs 	:	11
-    Number of Sequential MCs    	:	15
-    Number of DPs               	:	1
+    Number of Combinational MCs 	:	15
+    Number of Sequential MCs    	:	20
+    Number of DPs               	:	3
     Number of Controls          	:	2
-    Number of Status            	:	1
+    Number of Status            	:	2
     Number of SyncCells         	:	0
     Number of count7cells       	:	1
 
 Device Utilization Summary after Packing
-    Macrocells                  :	26/192
-    UDBS                        :	7/24
-    IOs                         :	2/72
+    Macrocells                  :	35/192
+    UDBS                        :	9/24
+    IOs                         :	3/72
 
 
 D2088: Phase 3, elapsed time : 0.0 (sec)
@@ -80,12 +80,12 @@ analysis after routing.
                      Clock Summary 
 ======================================================================
 Number of clocks: 6
-Clock: CyBUS_CLK            | Frequency:  36.4 MHz | Target:  24.0 MHz
+Clock: CyBUS_CLK            | Frequency:  33.7 MHz | Target:  24.0 MHz
 Clock: CyILO                | Frequency: N/A       | Target:   0.0 MHz
 Clock: CyIMO                | Frequency: N/A       | Target:   3.0 MHz
 Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  24.0 MHz
 Clock: CyPLL_OUT            | Frequency: N/A       | Target:  24.0 MHz
-Clock: UART_IntClock        | Frequency:  36.4 MHz | Target:   0.1 MHz
+Clock: UART_IntClock        | Frequency:  33.7 MHz | Target:   0.1 MHz
 
 ======================================================================
                      End of Clock Summary
@@ -98,31 +98,31 @@ Phase 7
                      Clock Summary 
 ======================================================================
 Number of clocks: 6
-Clock: CyBUS_CLK            | Frequency:   0.9 MHz | Target:  24.0 MHz
+Clock: CyBUS_CLK            | Frequency:   0.8 MHz | Target:  24.0 MHz
 Clock: CyILO                | Frequency: N/A       | Target:   0.0 MHz
 Clock: CyIMO                | Frequency: N/A       | Target:   3.0 MHz
 Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  24.0 MHz
 Clock: CyPLL_OUT            | Frequency: N/A       | Target:  24.0 MHz
-Clock: UART_IntClock        | Frequency:   0.9 MHz | Target:   0.1 MHz
+Clock: UART_IntClock        | Frequency:   0.8 MHz | Target:   0.1 MHz
 
 ======================================================================
                      End of Clock Summary
 ######################################################################
-D2088: Phase 7, elapsed time : 0.4 (sec)
+D2088: Phase 7, elapsed time : 0.5 (sec)
 
 Final Design Statistics
-    Number of Combinational MCs 	:	11
-    Number of Sequential MCs    	:	15
-    Number of DPs               	:	1
+    Number of Combinational MCs 	:	15
+    Number of Sequential MCs    	:	20
+    Number of DPs               	:	3
     Number of Controls          	:	2
-    Number of Status            	:	1
+    Number of Status            	:	2
     Number of SyncCells         	:	0
     Number of count7cells       	:	1
-    Number of IOs       	:	2
+    Number of IOs       	:	3
 
 Device Utilization Summary
-    Macrocells                  :	26/192
-    IOs                         :	2/72
+    Macrocells                  :	35/192
+    IOs                         :	3/72
 
 
 

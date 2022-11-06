@@ -3,13 +3,14 @@
 <!--This file is machine generated and read. It is not intended to be edited by hand.-->
 <!--Due to this, there is no schema for this file.-->
 <CyGuid_2867d519-54d2-4c01-9830-c51cb08bc3dd type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWorkspaceSerialize" version="5" xml_contents_version="3" name="Prove_PSOC" persistent="Prove_PSOC.cywrk" platform="NOT_USED">
-<current_project name=".\LED_GUI.cydsn\LED_GUI.cyprj" />
+<current_project name=".\LED_GUI_LOOP.cydsn\LED_GUI_LOOP.cyprj" />
 <wrkspc_folders />
 <files />
 <projects>
 <v>.\LED_BLINK.cydsn\LED_BLINK.cyprj</v>
 <v>.\LED_BUTTON_INTERRUPT.cydsn\LED_BUTTON_INTERRUPT.cyprj</v>
 <v>.\LED_GUI.cydsn\LED_GUI.cyprj</v>
+<v>.\LED_GUI_LOOP.cydsn\LED_GUI_LOOP.cyprj</v>
 </projects>
 <workspace_id v="c7194b4d-83b7-4b65-a69d-b44d7faaf71c" />
 <WriteAppVersionLastSavedWith v="4.4.0.80" />

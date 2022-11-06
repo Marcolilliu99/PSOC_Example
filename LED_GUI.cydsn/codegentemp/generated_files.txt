@@ -28,6 +28,9 @@
   <file name="C:\Users\marco\OneDrive\Documenti\PSoC Creator\Prove_PSOC\LED_GUI.cydsn\codegentemp\UART_BOOT.c" value="SOURCE_C;CortexM3;;;;UART" />
   <file name="C:\Users\marco\OneDrive\Documenti\PSoC Creator\Prove_PSOC\LED_GUI.cydsn\codegentemp\isr_RX.c" value="SOURCE_C;CortexM3;;;;isr_RX" />
   <file name="C:\Users\marco\OneDrive\Documenti\PSoC Creator\Prove_PSOC\LED_GUI.cydsn\codegentemp\isr_RX.h" value="HEADER;;;;;isr_RX" />
+  <file name="C:\Users\marco\OneDrive\Documenti\PSoC Creator\Prove_PSOC\LED_GUI.cydsn\codegentemp\TX_aliases.h" value="HEADER;;;;;TX" />
+  <file name="C:\Users\marco\OneDrive\Documenti\PSoC Creator\Prove_PSOC\LED_GUI.cydsn\codegentemp\TX.c" value="SOURCE_C;CortexM3;;;;TX" />
+  <file name="C:\Users\marco\OneDrive\Documenti\PSoC Creator\Prove_PSOC\LED_GUI.cydsn\codegentemp\TX.h" value="HEADER;;;;;TX" />
   <file name="C:\Users\marco\OneDrive\Documenti\PSoC Creator\Prove_PSOC\LED_GUI.cydsn\codegentemp\UART_IntClock.c" value="SOURCE_C;CortexM3;;;;UART_IntClock" />
   <file name="C:\Users\marco\OneDrive\Documenti\PSoC Creator\Prove_PSOC\LED_GUI.cydsn\codegentemp\UART_IntClock.h" value="HEADER;;;;;UART_IntClock" />
   <file name="C:\Users\marco\OneDrive\Documenti\PSoC Creator\Prove_PSOC\LED_GUI.cydsn\codegentemp\cm3gcc.ld" value="LINKER_SCRIPT;;;b98f980c-3bd1-4fc7-a887-c56a20a46fdd;;cy_boot" />

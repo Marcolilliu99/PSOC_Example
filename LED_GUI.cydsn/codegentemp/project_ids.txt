@@ -1,9 +1,10 @@
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|cab4ebf8-a300-495e-bdfb-9b2bd281a6d6
-C:\Users\marco\OneDrive\Documenti\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|c34d3d2f-9964-47cf-9670-d5022c068647
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|5e3dd635-f4a5-4e96-b918-4cc183aa8a4a
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|2af3d3f9-4dca-41f3-ad58-88fb60494f0f
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|91db5618-ee76-4b64-855a-6c64c772aa2a
-C:\Users\marco\OneDrive\Documenti\PSoC Creator\Prove_PSOC\LED_BLINK.cydsn\LED_BLINK.cyprj|db12fbd2-0222-4d0f-9ee6-e99454636e36
-G:\Il mio Drive\Polimi\Secondo Anno\Primo Semestre\Laboratorio di Tecnologie Elettroniche e Biosensori\03_Support_Material\PSOC\AnnotationLibrary\AnnotationLibrary_lib\AnnotationLibrary_lib.cylib\AnnotationLibrary_lib.cyprj|597191f3-4330-402b-b3a6-61d72b4cfbae
-C:\Users\marco\OneDrive\Documenti\PSoC Creator\Prove_PSOC\LED_BUTTON_INTERRUPT.cydsn\LED_BUTTON_INTERRUPT.cyprj|61b0f405-f42b-459a-8e54-e049a0a83a66
-C:\Users\marco\OneDrive\Documenti\PSoC Creator\Prove_PSOC\LED_GUI.cydsn\LED_GUI.cyprj|6d23fee7-c98f-4a95-99fc-972986bb9aee
+C:\Users\marco\OneDrive\Documenti\PSoC Creator\Prove_PSOC\LED_BLINK.cydsn\LED_BLINK.cyprj|53520ac7-7e13-4550-b8d8-584cf25f4982
+G:\Il mio Drive\Polimi\Secondo Anno\Primo Semestre\Laboratorio di Tecnologie Elettroniche e Biosensori\03_Support_Material\PSOC\AnnotationLibrary\AnnotationLibrary_lib\AnnotationLibrary_lib.cylib\AnnotationLibrary_lib.cyprj|a3708f21-d35d-4eb2-98ba-0ec27509762b
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|db2e394c-33d0-4eb0-bcb6-b6380bef815e
+C:\Users\marco\OneDrive\Documenti\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|0569bfc3-1d10-43fc-a6a3-ee2aef8a6259
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|fc2c191d-0a92-4b1e-b7b3-8d81cdacf57c
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|21b2fba1-5503-46df-b00c-7b6a79e9e451
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|7a66374a-91d6-4c46-b3cd-59ab9bedac78
+C:\Users\marco\OneDrive\Documenti\PSoC Creator\Prove_PSOC\LED_BUTTON_INTERRUPT.cydsn\LED_BUTTON_INTERRUPT.cyprj|c79d2ca3-d967-4e11-8605-738dc425470c
+C:\Users\marco\OneDrive\Documenti\PSoC Creator\Prove_PSOC\LED_GUI.cydsn\LED_GUI.cyprj|e7f77a4b-61cf-42aa-8999-9f75293a98b8
+C:\Users\marco\OneDrive\Documenti\PSoC Creator\Prove_PSOC\LED_GUI_LOOP.cydsn\LED_GUI_LOOP.cyprj|fd2606e2-cfb2-4583-bd76-b02efd61445e

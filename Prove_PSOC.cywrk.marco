@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Prove_PSOC\LED_GUI\Source Files">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Prove_PSOC\LED_GUI_LOOP\Source Files\main.c">
 <ExpandedNodeIds>
 <v>Prove_PSOC</v>
 <v>Prove_PSOC\LED_BLINK\TopDesign</v>
@@ -52,7 +52,6 @@
 <v>Prove_PSOC\LED_BUTTON_INTERRUPT\Source Files\main.c</v>
 <v>Prove_PSOC\LED_BUTTON_INTERRUPT\Generated_Source</v>
 <v>Prove_PSOC\LED_BUTTON_INTERRUPT\Generated_Source\PSoC5</v>
-<v>Prove_PSOC\LED_GUI</v>
 <v>Prove_PSOC\LED_GUI\TopDesign</v>
 <v>Prove_PSOC\LED_GUI\LED_GUI.cydwr</v>
 <v>Prove_PSOC\LED_GUI\LED_GUI.cydwr\Pins</v>
@@ -72,43 +71,30 @@
 <v>Prove_PSOC\LED_GUI\Source Files\main.c</v>
 <v>Prove_PSOC\LED_GUI\Generated_Source</v>
 <v>Prove_PSOC\LED_GUI\Generated_Source\PSoC5</v>
+<v>Prove_PSOC\LED_GUI_LOOP\TopDesign</v>
+<v>Prove_PSOC\LED_GUI_LOOP\LED_GUI_LOOP.cydwr</v>
+<v>Prove_PSOC\LED_GUI_LOOP\LED_GUI_LOOP.cydwr\Pins</v>
+<v>Prove_PSOC\LED_GUI_LOOP\LED_GUI_LOOP.cydwr\Analog</v>
+<v>Prove_PSOC\LED_GUI_LOOP\LED_GUI_LOOP.cydwr\Clocks</v>
+<v>Prove_PSOC\LED_GUI_LOOP\LED_GUI_LOOP.cydwr\Interrupts</v>
+<v>Prove_PSOC\LED_GUI_LOOP\LED_GUI_LOOP.cydwr\DMA</v>
+<v>Prove_PSOC\LED_GUI_LOOP\LED_GUI_LOOP.cydwr\System</v>
+<v>Prove_PSOC\LED_GUI_LOOP\LED_GUI_LOOP.cydwr\Directives</v>
+<v>Prove_PSOC\LED_GUI_LOOP\LED_GUI_LOOP.cydwr\Flash Security</v>
+<v>Prove_PSOC\LED_GUI_LOOP\LED_GUI_LOOP.cydwr\EEPROM</v>
+<v>Prove_PSOC\LED_GUI_LOOP\Header Files</v>
+<v>Prove_PSOC\LED_GUI_LOOP\Header Files\cyapicallbacks.h</v>
+<v>Prove_PSOC\LED_GUI_LOOP\Source Files</v>
+<v>Prove_PSOC\LED_GUI_LOOP\Source Files\main.c</v>
+<v>Prove_PSOC\LED_GUI_LOOP\Generated_Source</v>
+<v>Prove_PSOC\LED_GUI_LOOP\Generated_Source\PSoC5</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>Prove_PSOC</v>
 <v>Prove_PSOC\LED_BLINK</v>
 <v>Prove_PSOC\LED_BUTTON_INTERRUPT</v>
 <v>Prove_PSOC\LED_GUI</v>
-<v>Prove_PSOC\LED_GUI\TopDesign</v>
-<v>Prove_PSOC\LED_GUI\LED_GUI.cydwr</v>
-<v>Prove_PSOC\LED_GUI\LED_GUI.cydwr\Pins</v>
-<v>Prove_PSOC\LED_GUI\LED_GUI.cydwr\Analog</v>
-<v>Prove_PSOC\LED_GUI\LED_GUI.cydwr\Clocks</v>
-<v>Prove_PSOC\LED_GUI\LED_GUI.cydwr\Interrupts</v>
-<v>Prove_PSOC\LED_GUI\LED_GUI.cydwr\DMA</v>
-<v>Prove_PSOC\LED_GUI\LED_GUI.cydwr\System</v>
-<v>Prove_PSOC\LED_GUI\LED_GUI.cydwr\Directives</v>
-<v>Prove_PSOC\LED_GUI\LED_GUI.cydwr\Flash Security</v>
-<v>Prove_PSOC\LED_GUI\LED_GUI.cydwr\EEPROM</v>
-<v>Prove_PSOC\LED_GUI\Header Files</v>
-<v>Prove_PSOC\LED_GUI\Header Files\cyapicallbacks.h</v>
-<v>Prove_PSOC\LED_GUI\Header Files\Interrupt_Routines.h</v>
-<v>Prove_PSOC\LED_GUI\Source Files</v>
-<v>Prove_PSOC\LED_GUI\Source Files\Interrupt_Routines.c</v>
-<v>Prove_PSOC\LED_GUI\Source Files\main.c</v>
-<v>Prove_PSOC\LED_GUI\Generated_Source</v>
-<v>Prove_PSOC\LED_GUI\Generated_Source\PSoC5</v>
-<v>Prove_PSOC\LED_GUI\Generated_Source\PSoC5\cy_boot</v>
-<v>Prove_PSOC\LED_GUI\Generated_Source\PSoC5\Em_EEPROM_Dynamic</v>
-<v>Prove_PSOC\LED_GUI\Generated_Source\PSoC5\isr_RX</v>
-<v>Prove_PSOC\LED_GUI\Generated_Source\PSoC5\PIN_INT_LED</v>
-<v>Prove_PSOC\LED_GUI\Generated_Source\PSoC5\UART</v>
-<v>Prove_PSOC\LED_GUI\Generated_Source\PSoC5\UART_IntClock</v>
-<v>Prove_PSOC\LED_GUI\Generated_Source\PSoC5\cycodeshareexport.ld</v>
-<v>Prove_PSOC\LED_GUI\Generated_Source\PSoC5\cycodeshareimport.ld</v>
-<v>Prove_PSOC\LED_GUI\Generated_Source\PSoC5\cycodeshareimport.scat</v>
-<v>Prove_PSOC\LED_GUI\Generated_Source\PSoC5\cydevice.h</v>
-<v>Prove_PSOC\LED_GUI\Generated_Source\PSoC5\cydevice_trm.h</v>
-<v>Prove_PSOC\LED_GUI\Generated_Source\PSoC5\cydevicegnu.inc</v>
+<v>Prove_PSOC\LED_GUI_LOOP</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -123,6 +109,9 @@
 <v>Prove_PSOC\LED_GUI</v>
 <v>Prove_PSOC\LED_GUI\TopDesign</v>
 <v>Prove_PSOC\LED_GUI\TopDesign\TopDesign.cysch</v>
+<v>Prove_PSOC\LED_GUI_LOOP</v>
+<v>Prove_PSOC\LED_GUI_LOOP\TopDesign</v>
+<v>Prove_PSOC\LED_GUI_LOOP\TopDesign\TopDesign.cysch</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>Prove_PSOC</v>
@@ -135,6 +124,9 @@
 <v>Prove_PSOC\LED_GUI</v>
 <v>Prove_PSOC\LED_GUI\TopDesign</v>
 <v>Prove_PSOC\LED_GUI\TopDesign\TopDesign.cysch</v>
+<v>Prove_PSOC\LED_GUI_LOOP</v>
+<v>Prove_PSOC\LED_GUI_LOOP\TopDesign</v>
+<v>Prove_PSOC\LED_GUI_LOOP\TopDesign\TopDesign.cysch</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Prove_PSOC">
@@ -211,6 +203,7 @@
 <v>Prove_PSOC\LED_GUI\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_RX.lst</v>
 <v>Prove_PSOC\LED_GUI\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
 <v>Prove_PSOC\LED_GUI\CortexM3\ARM_GCC_541\Debug\Listing Files\PIN_INT_LED.lst</v>
+<v>Prove_PSOC\LED_GUI\CortexM3\ARM_GCC_541\Debug\Listing Files\TX.lst</v>
 <v>Prove_PSOC\LED_GUI\CortexM3\ARM_GCC_541\Debug\Listing Files\UART.lst</v>
 <v>Prove_PSOC\LED_GUI\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_BOOT.lst</v>
 <v>Prove_PSOC\LED_GUI\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_INT.lst</v>
@@ -222,6 +215,35 @@
 <v>Prove_PSOC\LED_GUI\LED_GUI.gpdsc</v>
 <v>Prove_PSOC\LED_GUI\LED_GUI.rpt</v>
 <v>Prove_PSOC\LED_GUI\LED_GUI_timing.html</v>
+<v>Prove_PSOC\LED_GUI_LOOP</v>
+<v>Prove_PSOC\LED_GUI_LOOP\CortexM3</v>
+<v>Prove_PSOC\LED_GUI_LOOP\CortexM3\ARM_GCC_541</v>
+<v>Prove_PSOC\LED_GUI_LOOP\CortexM3\ARM_GCC_541\Debug</v>
+<v>Prove_PSOC\LED_GUI_LOOP\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>Prove_PSOC\LED_GUI_LOOP\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>Prove_PSOC\LED_GUI_LOOP\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>Prove_PSOC\LED_GUI_LOOP\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>Prove_PSOC\LED_GUI_LOOP\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>Prove_PSOC\LED_GUI_LOOP\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>Prove_PSOC\LED_GUI_LOOP\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>Prove_PSOC\LED_GUI_LOOP\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>Prove_PSOC\LED_GUI_LOOP\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>Prove_PSOC\LED_GUI_LOOP\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>Prove_PSOC\LED_GUI_LOOP\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>Prove_PSOC\LED_GUI_LOOP\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>Prove_PSOC\LED_GUI_LOOP\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>Prove_PSOC\LED_GUI_LOOP\CortexM3\ARM_GCC_541\Debug\Listing Files\PIN_INT_LED.lst</v>
+<v>Prove_PSOC\LED_GUI_LOOP\CortexM3\ARM_GCC_541\Debug\Listing Files\UART.lst</v>
+<v>Prove_PSOC\LED_GUI_LOOP\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_BOOT.lst</v>
+<v>Prove_PSOC\LED_GUI_LOOP\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_INT.lst</v>
+<v>Prove_PSOC\LED_GUI_LOOP\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_IntClock.lst</v>
+<v>Prove_PSOC\LED_GUI_LOOP\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_PM.lst</v>
+<v>Prove_PSOC\LED_GUI_LOOP\CortexM3\ARM_GCC_541\Debug\LED_GUI_LOOP.elf</v>
+<v>Prove_PSOC\LED_GUI_LOOP\CortexM3\ARM_GCC_541\Debug\LED_GUI_LOOP.hex</v>
+<v>Prove_PSOC\LED_GUI_LOOP\CortexM3\ARM_GCC_541\Debug\LED_GUI_LOOP.map</v>
+<v>Prove_PSOC\LED_GUI_LOOP\LED_GUI_LOOP.gpdsc</v>
+<v>Prove_PSOC\LED_GUI_LOOP\LED_GUI_LOOP.rpt</v>
+<v>Prove_PSOC\LED_GUI_LOOP\LED_GUI_LOOP_timing.html</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>Prove_PSOC</v>
@@ -291,6 +313,7 @@
 <v>Prove_PSOC\LED_GUI\CY8C58LP Family Datasheet</v>
 <v>Prove_PSOC\LED_GUI\System Reference Guides</v>
 <v>Prove_PSOC\LED_GUI\System Reference Guides\cy_boot_v6_0</v>
+<v>Prove_PSOC\LED_GUI\cy_constant_v1_0.pdf</v>
 <v>Prove_PSOC\LED_GUI\cy_isr_v1_70.pdf</v>
 <v>Prove_PSOC\LED_GUI\cy_pins_v2_20</v>
 <v>Prove_PSOC\LED_GUI\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
@@ -298,6 +321,15 @@
 <v>Prove_PSOC\LED_GUI\LED_v1_0.pdf</v>
 <v>Prove_PSOC\LED_GUI\Resistor_v1_0.pdf</v>
 <v>Prove_PSOC\LED_GUI\UART_v2_50.pdf</v>
+<v>Prove_PSOC\LED_GUI_LOOP</v>
+<v>Prove_PSOC\LED_GUI_LOOP\PSoC 5LP Architecture TRM</v>
+<v>Prove_PSOC\LED_GUI_LOOP\CY8C58LP Family Datasheet</v>
+<v>Prove_PSOC\LED_GUI_LOOP\System Reference Guides</v>
+<v>Prove_PSOC\LED_GUI_LOOP\System Reference Guides\cy_boot_v6_0</v>
+<v>Prove_PSOC\LED_GUI_LOOP\cy_constant_v1_0.pdf</v>
+<v>Prove_PSOC\LED_GUI_LOOP\cy_pins_v2_20</v>
+<v>Prove_PSOC\LED_GUI_LOOP\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>Prove_PSOC\LED_GUI_LOOP\UART_v2_50.pdf</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>Prove_PSOC</v>
@@ -323,6 +355,7 @@
 <v>Prove_PSOC\LED_GUI\CY8C58LP Family Datasheet</v>
 <v>Prove_PSOC\LED_GUI\System Reference Guides</v>
 <v>Prove_PSOC\LED_GUI\System Reference Guides\cy_boot_v6_0</v>
+<v>Prove_PSOC\LED_GUI\cy_constant_v1_0.pdf</v>
 <v>Prove_PSOC\LED_GUI\cy_isr_v1_70.pdf</v>
 <v>Prove_PSOC\LED_GUI\cy_pins_v2_20</v>
 <v>Prove_PSOC\LED_GUI\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
@@ -330,6 +363,10 @@
 <v>Prove_PSOC\LED_GUI\LED_v1_0.pdf</v>
 <v>Prove_PSOC\LED_GUI\Resistor_v1_0.pdf</v>
 <v>Prove_PSOC\LED_GUI\UART_v2_50.pdf</v>
+<v>Prove_PSOC\LED_GUI_LOOP</v>
+<v>Prove_PSOC\LED_GUI_LOOP\PSoC 5LP Architecture TRM</v>
+<v>Prove_PSOC\LED_GUI_LOOP\CY8C58LP Family Datasheet</v>
+<v>Prove_PSOC\LED_GUI_LOOP\System Reference Guides</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
@@ -357,11 +394,7 @@
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
 <OpenDocs>
-<name v=".\LED_GUI.cydsn\LED_GUI.cydwr" />
-<name v=".\LED_GUI.cydsn\TopDesign\TopDesign.cysch" />
-<name v=".\LED_GUI.cydsn\main.c" />
-<name v=".\LED_GUI.cydsn\Interrupt_Routines.h" />
-<name v=".\LED_GUI.cydsn\Interrupt_Routines.c" />
+<name v=".\LED_GUI_LOOP.cydsn\main.c" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -369,8 +402,8 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1018, 487" SelectedTabbedMdiWindow="89348820-0f4a-45e2-9e8c-b1ae1b3ea624"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="95260ef6-06ef-4cf2-adde-5a8223b25bc1" /><DocumentWindow Key="C:\Users\marco\OneDrive\Documenti\PSoC Creator\Prove_PSOC\LED_GUI.cydsn\LED_GUI.cydwr" Guid="8acd01fc-d3a5-40c1-8f44-4148118a96b0" /><DocumentWindow Key="C:\Users\marco\OneDrive\Documenti\PSoC Creator\Prove_PSOC\LED_GUI.cydsn\TopDesign\TopDesign.cysch" Guid="0f65aee1-3326-4a52-a47c-b51829150274" /><DocumentWindow Key="C:\Users\marco\OneDrive\Documenti\PSoC Creator\Prove_PSOC\LED_GUI.cydsn\main.c" Guid="89348820-0f4a-45e2-9e8c-b1ae1b3ea624" /><DocumentWindow Key="C:\Users\marco\OneDrive\Documenti\PSoC Creator\Prove_PSOC\LED_GUI.cydsn\Interrupt_Routines.h" Guid="02f00a49-5bc8-4164-80dc-bd1f5cf9668d" /><DocumentWindow Key="C:\Users\marco\OneDrive\Documenti\PSoC Creator\Prove_PSOC\LED_GUI.cydsn\Interrupt_Routines.c" Guid="c690c9f7-ed9d-4f5d-9ed9-2f80558dfb95" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
-<config v="" />
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1018, 487" SelectedTabbedMdiWindow="8c08acd5-ce15-4f99-ab11-4efcca85f028"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="95260ef6-06ef-4cf2-adde-5a8223b25bc1" /><DocumentWindow Key="C:\Users\marco\OneDrive\Documenti\PSoC Creator\Prove_PSOC\LED_GUI_LOOP.cydsn\main.c" Guid="8c08acd5-ce15-4f99-ab11-4efcca85f028" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+<config v="Debug" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
 </CyXmlSerializer>

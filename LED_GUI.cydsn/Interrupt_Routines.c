@@ -22,8 +22,12 @@ CY_ISR(Custom_ISR_RX)
     char_received=UART_GetChar();
     switch(char_received)
     {
-        case 'b': PIN_INT_LED_Write(ON);
-        case 's': PIN_INT_LED_Write(OFF);
+        case 'b': 
+            PIN_INT_LED_Write(ON);
+            break;
+        case 's': 
+            PIN_INT_LED_Write(OFF);
+            break;
     }
     
 }

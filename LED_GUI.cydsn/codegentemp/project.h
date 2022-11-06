@@ -23,6 +23,8 @@
 #include "PIN_INT_LED.h"
 #include "UART.h"
 #include "isr_RX.h"
+#include "TX_aliases.h"
+#include "TX.h"
 #include "UART_IntClock.h"
 #include "core_cm3_psoc5.h"
 #include "CyDmac.h"
