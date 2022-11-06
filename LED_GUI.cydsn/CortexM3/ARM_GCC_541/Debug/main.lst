@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\marco\AppData\Local\Temp\ccD5gUNY.s 			page 1
+ARM GAS  C:\Users\marco\AppData\Local\Temp\ccLlvBlF.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\marco\AppData\Local\Temp\ccD5gUNY.s 			page 1
   38              		.syntax unified
   39              	@ 17 "main.c" 1
   40 0002 62B6     		CPSIE   i
-ARM GAS  C:\Users\marco\AppData\Local\Temp\ccD5gUNY.s 			page 2
+ARM GAS  C:\Users\marco\AppData\Local\Temp\ccLlvBlF.s 			page 2
 
 
   41              	@ 0 "" 2
@@ -68,419 +68,442 @@ ARM GAS  C:\Users\marco\AppData\Local\Temp\ccD5gUNY.s 			page 1
   44              		.syntax unified
   45 0004 FFF7FEFF 		bl	UART_Start
   46              	.LVL0:
-  47              	.L2:
-  48 0008 FEE7     		b	.L2
-  49              		.cfi_endproc
-  50              	.LFE64:
-  51              		.size	main, .-main
-  52 000a 00BF     		.text
-  53              	.Letext0:
-  54              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
-  55              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
-  56              		.file 4 "Generated_Source\\PSoC5/core_cm3.h"
-  57              		.file 5 "Generated_Source\\PSoC5/UART.h"
-  58              		.section	.debug_info,"",%progbits
-  59              	.Ldebug_info0:
-  60 0000 E0000000 		.4byte	0xe0
-  61 0004 0400     		.2byte	0x4
-  62 0006 00000000 		.4byte	.Ldebug_abbrev0
-  63 000a 04       		.byte	0x4
-  64 000b 01       		.uleb128 0x1
-  65 000c 82000000 		.4byte	.LASF16
-  66 0010 0C       		.byte	0xc
-  67 0011 2E000000 		.4byte	.LASF17
-  68 0015 3A000000 		.4byte	.LASF18
-  69 0019 00000000 		.4byte	.Ldebug_ranges0+0
-  70 001d 00000000 		.4byte	0
-  71 0021 00000000 		.4byte	.Ldebug_line0
-  72 0025 02       		.uleb128 0x2
-  73 0026 01       		.byte	0x1
-  74 0027 06       		.byte	0x6
-  75 0028 74010000 		.4byte	.LASF0
-  76 002c 02       		.uleb128 0x2
-  77 002d 01       		.byte	0x1
-  78 002e 08       		.byte	0x8
-  79 002f 44010000 		.4byte	.LASF1
-  80 0033 02       		.uleb128 0x2
-  81 0034 02       		.byte	0x2
-  82 0035 05       		.byte	0x5
-  83 0036 9C010000 		.4byte	.LASF2
-  84 003a 02       		.uleb128 0x2
-  85 003b 02       		.byte	0x2
-  86 003c 07       		.byte	0x7
-  87 003d 0E000000 		.4byte	.LASF3
-  88 0041 03       		.uleb128 0x3
-  89 0042 8C010000 		.4byte	.LASF9
-  90 0046 02       		.byte	0x2
-  91 0047 3F       		.byte	0x3f
-  92 0048 4C000000 		.4byte	0x4c
-  93 004c 02       		.uleb128 0x2
-  94 004d 04       		.byte	0x4
-  95 004e 05       		.byte	0x5
-  96 004f 57010000 		.4byte	.LASF4
-ARM GAS  C:\Users\marco\AppData\Local\Temp\ccD5gUNY.s 			page 3
+  19:main.c        ****     isr_RX_StartEx(Custom_ISR_RX);
+  47              		.loc 1 19 0
+  48 0008 0148     		ldr	r0, .L4
+  49 000a FFF7FEFF 		bl	isr_RX_StartEx
+  50              	.LVL1:
+  51              	.L2:
+  52 000e FEE7     		b	.L2
+  53              	.L5:
+  54              		.align	2
+  55              	.L4:
+  56 0010 00000000 		.word	Custom_ISR_RX
+  57              		.cfi_endproc
+  58              	.LFE64:
+  59              		.size	main, .-main
+  60              		.text
+  61              	.Letext0:
+  62              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+  63              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+  64              		.file 4 "Generated_Source\\PSoC5/UART.h"
+  65              		.file 5 "Generated_Source\\PSoC5/isr_RX.h"
+  66              		.file 6 "Generated_Source\\PSoC5/core_cm3.h"
+  67              		.section	.debug_info,"",%progbits
+  68              	.Ldebug_info0:
+  69 0000 F4000000 		.4byte	0xf4
+  70 0004 0400     		.2byte	0x4
+  71 0006 00000000 		.4byte	.Ldebug_abbrev0
+  72 000a 04       		.byte	0x4
+  73 000b 01       		.uleb128 0x1
+  74 000c 82000000 		.4byte	.LASF18
+  75 0010 0C       		.byte	0xc
+  76 0011 2E000000 		.4byte	.LASF19
+  77 0015 3A000000 		.4byte	.LASF20
+  78 0019 00000000 		.4byte	.Ldebug_ranges0+0
+  79 001d 00000000 		.4byte	0
+  80 0021 00000000 		.4byte	.Ldebug_line0
+  81 0025 02       		.uleb128 0x2
+  82 0026 01       		.byte	0x1
+  83 0027 06       		.byte	0x6
+  84 0028 83010000 		.4byte	.LASF0
+  85 002c 02       		.uleb128 0x2
+  86 002d 01       		.byte	0x1
+  87 002e 08       		.byte	0x8
+  88 002f 53010000 		.4byte	.LASF1
+  89 0033 02       		.uleb128 0x2
+  90 0034 02       		.byte	0x2
+  91 0035 05       		.byte	0x5
+  92 0036 AB010000 		.4byte	.LASF2
+  93 003a 02       		.uleb128 0x2
+  94 003b 02       		.byte	0x2
+  95 003c 07       		.byte	0x7
+ARM GAS  C:\Users\marco\AppData\Local\Temp\ccLlvBlF.s 			page 3
 
 
-  97 0053 02       		.uleb128 0x2
-  98 0054 04       		.byte	0x4
-  99 0055 07       		.byte	0x7
- 100 0056 10010000 		.4byte	.LASF5
- 101 005a 02       		.uleb128 0x2
- 102 005b 08       		.byte	0x8
- 103 005c 05       		.byte	0x5
- 104 005d 00000000 		.4byte	.LASF6
- 105 0061 02       		.uleb128 0x2
- 106 0062 08       		.byte	0x8
- 107 0063 07       		.byte	0x7
- 108 0064 22010000 		.4byte	.LASF7
- 109 0068 04       		.uleb128 0x4
- 110 0069 04       		.byte	0x4
- 111 006a 05       		.byte	0x5
- 112 006b 696E7400 		.ascii	"int\000"
- 113 006f 02       		.uleb128 0x2
- 114 0070 04       		.byte	0x4
- 115 0071 07       		.byte	0x7
- 116 0072 21000000 		.4byte	.LASF8
- 117 0076 03       		.uleb128 0x3
- 118 0077 A6010000 		.4byte	.LASF10
- 119 007b 03       		.byte	0x3
- 120 007c 2C       		.byte	0x2c
- 121 007d 41000000 		.4byte	0x41
- 122 0081 02       		.uleb128 0x2
- 123 0082 04       		.byte	0x4
- 124 0083 04       		.byte	0x4
- 125 0084 96010000 		.4byte	.LASF11
- 126 0088 02       		.uleb128 0x2
- 127 0089 08       		.byte	0x8
- 128 008a 04       		.byte	0x4
- 129 008b 60010000 		.4byte	.LASF12
- 130 008f 02       		.uleb128 0x2
- 131 0090 01       		.byte	0x1
- 132 0091 08       		.byte	0x8
- 133 0092 52010000 		.4byte	.LASF13
- 134 0096 02       		.uleb128 0x2
- 135 0097 08       		.byte	0x8
- 136 0098 04       		.byte	0x4
- 137 0099 80010000 		.4byte	.LASF14
- 138 009d 02       		.uleb128 0x2
- 139 009e 04       		.byte	0x4
- 140 009f 07       		.byte	0x7
- 141 00a0 AE010000 		.4byte	.LASF15
- 142 00a4 05       		.uleb128 0x5
- 143 00a5 35000000 		.4byte	.LASF19
- 144 00a9 01       		.byte	0x1
- 145 00aa 0F       		.byte	0xf
- 146 00ab 68000000 		.4byte	0x68
- 147 00af 00000000 		.4byte	.LFB64
- 148 00b3 0A000000 		.4byte	.LFE64-.LFB64
- 149 00b7 01       		.uleb128 0x1
- 150 00b8 9C       		.byte	0x9c
- 151 00b9 C7000000 		.4byte	0xc7
- 152 00bd 06       		.uleb128 0x6
- 153 00be 08000000 		.4byte	.LVL0
-ARM GAS  C:\Users\marco\AppData\Local\Temp\ccD5gUNY.s 			page 4
+  96 003d 0E000000 		.4byte	.LASF3
+  97 0041 03       		.uleb128 0x3
+  98 0042 9B010000 		.4byte	.LASF9
+  99 0046 02       		.byte	0x2
+ 100 0047 3F       		.byte	0x3f
+ 101 0048 4C000000 		.4byte	0x4c
+ 102 004c 02       		.uleb128 0x2
+ 103 004d 04       		.byte	0x4
+ 104 004e 05       		.byte	0x5
+ 105 004f 66010000 		.4byte	.LASF4
+ 106 0053 02       		.uleb128 0x2
+ 107 0054 04       		.byte	0x4
+ 108 0055 07       		.byte	0x7
+ 109 0056 10010000 		.4byte	.LASF5
+ 110 005a 02       		.uleb128 0x2
+ 111 005b 08       		.byte	0x8
+ 112 005c 05       		.byte	0x5
+ 113 005d 00000000 		.4byte	.LASF6
+ 114 0061 02       		.uleb128 0x2
+ 115 0062 08       		.byte	0x8
+ 116 0063 07       		.byte	0x7
+ 117 0064 22010000 		.4byte	.LASF7
+ 118 0068 04       		.uleb128 0x4
+ 119 0069 04       		.byte	0x4
+ 120 006a 05       		.byte	0x5
+ 121 006b 696E7400 		.ascii	"int\000"
+ 122 006f 02       		.uleb128 0x2
+ 123 0070 04       		.byte	0x4
+ 124 0071 07       		.byte	0x7
+ 125 0072 21000000 		.4byte	.LASF8
+ 126 0076 03       		.uleb128 0x3
+ 127 0077 B5010000 		.4byte	.LASF10
+ 128 007b 03       		.byte	0x3
+ 129 007c 2C       		.byte	0x2c
+ 130 007d 41000000 		.4byte	0x41
+ 131 0081 02       		.uleb128 0x2
+ 132 0082 04       		.byte	0x4
+ 133 0083 04       		.byte	0x4
+ 134 0084 A5010000 		.4byte	.LASF11
+ 135 0088 02       		.uleb128 0x2
+ 136 0089 08       		.byte	0x8
+ 137 008a 04       		.byte	0x4
+ 138 008b 6F010000 		.4byte	.LASF12
+ 139 008f 02       		.uleb128 0x2
+ 140 0090 01       		.byte	0x1
+ 141 0091 08       		.byte	0x8
+ 142 0092 61010000 		.4byte	.LASF13
+ 143 0096 02       		.uleb128 0x2
+ 144 0097 08       		.byte	0x8
+ 145 0098 04       		.byte	0x4
+ 146 0099 8F010000 		.4byte	.LASF14
+ 147 009d 02       		.uleb128 0x2
+ 148 009e 04       		.byte	0x4
+ 149 009f 07       		.byte	0x7
+ 150 00a0 BD010000 		.4byte	.LASF15
+ 151 00a4 05       		.uleb128 0x5
+ 152 00a5 35000000 		.4byte	.LASF21
+ARM GAS  C:\Users\marco\AppData\Local\Temp\ccLlvBlF.s 			page 4
 
 
- 154 00c2 D8000000 		.4byte	0xd8
- 155 00c6 00       		.byte	0
- 156 00c7 07       		.uleb128 0x7
- 157 00c8 67010000 		.4byte	.LASF20
- 158 00cc 04       		.byte	0x4
- 159 00cd 1207     		.2byte	0x712
- 160 00cf D3000000 		.4byte	0xd3
- 161 00d3 08       		.uleb128 0x8
- 162 00d4 76000000 		.4byte	0x76
- 163 00d8 09       		.uleb128 0x9
- 164 00d9 39010000 		.4byte	.LASF21
- 165 00dd 39010000 		.4byte	.LASF21
- 166 00e1 05       		.byte	0x5
- 167 00e2 54       		.byte	0x54
- 168 00e3 00       		.byte	0
- 169              		.section	.debug_abbrev,"",%progbits
- 170              	.Ldebug_abbrev0:
- 171 0000 01       		.uleb128 0x1
- 172 0001 11       		.uleb128 0x11
- 173 0002 01       		.byte	0x1
- 174 0003 25       		.uleb128 0x25
- 175 0004 0E       		.uleb128 0xe
- 176 0005 13       		.uleb128 0x13
- 177 0006 0B       		.uleb128 0xb
- 178 0007 03       		.uleb128 0x3
- 179 0008 0E       		.uleb128 0xe
- 180 0009 1B       		.uleb128 0x1b
- 181 000a 0E       		.uleb128 0xe
- 182 000b 55       		.uleb128 0x55
- 183 000c 17       		.uleb128 0x17
- 184 000d 11       		.uleb128 0x11
- 185 000e 01       		.uleb128 0x1
- 186 000f 10       		.uleb128 0x10
- 187 0010 17       		.uleb128 0x17
- 188 0011 00       		.byte	0
- 189 0012 00       		.byte	0
- 190 0013 02       		.uleb128 0x2
- 191 0014 24       		.uleb128 0x24
- 192 0015 00       		.byte	0
- 193 0016 0B       		.uleb128 0xb
- 194 0017 0B       		.uleb128 0xb
- 195 0018 3E       		.uleb128 0x3e
- 196 0019 0B       		.uleb128 0xb
- 197 001a 03       		.uleb128 0x3
- 198 001b 0E       		.uleb128 0xe
- 199 001c 00       		.byte	0
- 200 001d 00       		.byte	0
- 201 001e 03       		.uleb128 0x3
- 202 001f 16       		.uleb128 0x16
- 203 0020 00       		.byte	0
- 204 0021 03       		.uleb128 0x3
- 205 0022 0E       		.uleb128 0xe
- 206 0023 3A       		.uleb128 0x3a
- 207 0024 0B       		.uleb128 0xb
- 208 0025 3B       		.uleb128 0x3b
- 209 0026 0B       		.uleb128 0xb
- 210 0027 49       		.uleb128 0x49
-ARM GAS  C:\Users\marco\AppData\Local\Temp\ccD5gUNY.s 			page 5
+ 153 00a9 01       		.byte	0x1
+ 154 00aa 0F       		.byte	0xf
+ 155 00ab 68000000 		.4byte	0x68
+ 156 00af 00000000 		.4byte	.LFB64
+ 157 00b3 14000000 		.4byte	.LFE64-.LFB64
+ 158 00b7 01       		.uleb128 0x1
+ 159 00b8 9C       		.byte	0x9c
+ 160 00b9 D0000000 		.4byte	0xd0
+ 161 00bd 06       		.uleb128 0x6
+ 162 00be 08000000 		.4byte	.LVL0
+ 163 00c2 E1000000 		.4byte	0xe1
+ 164 00c6 06       		.uleb128 0x6
+ 165 00c7 0E000000 		.4byte	.LVL1
+ 166 00cb EC000000 		.4byte	0xec
+ 167 00cf 00       		.byte	0
+ 168 00d0 07       		.uleb128 0x7
+ 169 00d1 76010000 		.4byte	.LASF22
+ 170 00d5 06       		.byte	0x6
+ 171 00d6 1207     		.2byte	0x712
+ 172 00d8 DC000000 		.4byte	0xdc
+ 173 00dc 08       		.uleb128 0x8
+ 174 00dd 76000000 		.4byte	0x76
+ 175 00e1 09       		.uleb128 0x9
+ 176 00e2 48010000 		.4byte	.LASF16
+ 177 00e6 48010000 		.4byte	.LASF16
+ 178 00ea 04       		.byte	0x4
+ 179 00eb 54       		.byte	0x54
+ 180 00ec 09       		.uleb128 0x9
+ 181 00ed 39010000 		.4byte	.LASF17
+ 182 00f1 39010000 		.4byte	.LASF17
+ 183 00f5 05       		.byte	0x5
+ 184 00f6 18       		.byte	0x18
+ 185 00f7 00       		.byte	0
+ 186              		.section	.debug_abbrev,"",%progbits
+ 187              	.Ldebug_abbrev0:
+ 188 0000 01       		.uleb128 0x1
+ 189 0001 11       		.uleb128 0x11
+ 190 0002 01       		.byte	0x1
+ 191 0003 25       		.uleb128 0x25
+ 192 0004 0E       		.uleb128 0xe
+ 193 0005 13       		.uleb128 0x13
+ 194 0006 0B       		.uleb128 0xb
+ 195 0007 03       		.uleb128 0x3
+ 196 0008 0E       		.uleb128 0xe
+ 197 0009 1B       		.uleb128 0x1b
+ 198 000a 0E       		.uleb128 0xe
+ 199 000b 55       		.uleb128 0x55
+ 200 000c 17       		.uleb128 0x17
+ 201 000d 11       		.uleb128 0x11
+ 202 000e 01       		.uleb128 0x1
+ 203 000f 10       		.uleb128 0x10
+ 204 0010 17       		.uleb128 0x17
+ 205 0011 00       		.byte	0
+ 206 0012 00       		.byte	0
+ 207 0013 02       		.uleb128 0x2
+ 208 0014 24       		.uleb128 0x24
+ 209 0015 00       		.byte	0
+ARM GAS  C:\Users\marco\AppData\Local\Temp\ccLlvBlF.s 			page 5
 
 
- 211 0028 13       		.uleb128 0x13
- 212 0029 00       		.byte	0
- 213 002a 00       		.byte	0
- 214 002b 04       		.uleb128 0x4
- 215 002c 24       		.uleb128 0x24
- 216 002d 00       		.byte	0
- 217 002e 0B       		.uleb128 0xb
- 218 002f 0B       		.uleb128 0xb
- 219 0030 3E       		.uleb128 0x3e
- 220 0031 0B       		.uleb128 0xb
- 221 0032 03       		.uleb128 0x3
- 222 0033 08       		.uleb128 0x8
- 223 0034 00       		.byte	0
- 224 0035 00       		.byte	0
- 225 0036 05       		.uleb128 0x5
- 226 0037 2E       		.uleb128 0x2e
- 227 0038 01       		.byte	0x1
- 228 0039 3F       		.uleb128 0x3f
- 229 003a 19       		.uleb128 0x19
- 230 003b 03       		.uleb128 0x3
- 231 003c 0E       		.uleb128 0xe
- 232 003d 3A       		.uleb128 0x3a
- 233 003e 0B       		.uleb128 0xb
- 234 003f 3B       		.uleb128 0x3b
- 235 0040 0B       		.uleb128 0xb
- 236 0041 27       		.uleb128 0x27
- 237 0042 19       		.uleb128 0x19
- 238 0043 49       		.uleb128 0x49
- 239 0044 13       		.uleb128 0x13
- 240 0045 8701     		.uleb128 0x87
- 241 0047 19       		.uleb128 0x19
- 242 0048 11       		.uleb128 0x11
- 243 0049 01       		.uleb128 0x1
- 244 004a 12       		.uleb128 0x12
- 245 004b 06       		.uleb128 0x6
- 246 004c 40       		.uleb128 0x40
- 247 004d 18       		.uleb128 0x18
- 248 004e 9742     		.uleb128 0x2117
- 249 0050 19       		.uleb128 0x19
- 250 0051 01       		.uleb128 0x1
- 251 0052 13       		.uleb128 0x13
- 252 0053 00       		.byte	0
- 253 0054 00       		.byte	0
- 254 0055 06       		.uleb128 0x6
- 255 0056 898201   		.uleb128 0x4109
- 256 0059 00       		.byte	0
- 257 005a 11       		.uleb128 0x11
- 258 005b 01       		.uleb128 0x1
- 259 005c 31       		.uleb128 0x31
- 260 005d 13       		.uleb128 0x13
- 261 005e 00       		.byte	0
- 262 005f 00       		.byte	0
- 263 0060 07       		.uleb128 0x7
- 264 0061 34       		.uleb128 0x34
- 265 0062 00       		.byte	0
- 266 0063 03       		.uleb128 0x3
- 267 0064 0E       		.uleb128 0xe
-ARM GAS  C:\Users\marco\AppData\Local\Temp\ccD5gUNY.s 			page 6
+ 210 0016 0B       		.uleb128 0xb
+ 211 0017 0B       		.uleb128 0xb
+ 212 0018 3E       		.uleb128 0x3e
+ 213 0019 0B       		.uleb128 0xb
+ 214 001a 03       		.uleb128 0x3
+ 215 001b 0E       		.uleb128 0xe
+ 216 001c 00       		.byte	0
+ 217 001d 00       		.byte	0
+ 218 001e 03       		.uleb128 0x3
+ 219 001f 16       		.uleb128 0x16
+ 220 0020 00       		.byte	0
+ 221 0021 03       		.uleb128 0x3
+ 222 0022 0E       		.uleb128 0xe
+ 223 0023 3A       		.uleb128 0x3a
+ 224 0024 0B       		.uleb128 0xb
+ 225 0025 3B       		.uleb128 0x3b
+ 226 0026 0B       		.uleb128 0xb
+ 227 0027 49       		.uleb128 0x49
+ 228 0028 13       		.uleb128 0x13
+ 229 0029 00       		.byte	0
+ 230 002a 00       		.byte	0
+ 231 002b 04       		.uleb128 0x4
+ 232 002c 24       		.uleb128 0x24
+ 233 002d 00       		.byte	0
+ 234 002e 0B       		.uleb128 0xb
+ 235 002f 0B       		.uleb128 0xb
+ 236 0030 3E       		.uleb128 0x3e
+ 237 0031 0B       		.uleb128 0xb
+ 238 0032 03       		.uleb128 0x3
+ 239 0033 08       		.uleb128 0x8
+ 240 0034 00       		.byte	0
+ 241 0035 00       		.byte	0
+ 242 0036 05       		.uleb128 0x5
+ 243 0037 2E       		.uleb128 0x2e
+ 244 0038 01       		.byte	0x1
+ 245 0039 3F       		.uleb128 0x3f
+ 246 003a 19       		.uleb128 0x19
+ 247 003b 03       		.uleb128 0x3
+ 248 003c 0E       		.uleb128 0xe
+ 249 003d 3A       		.uleb128 0x3a
+ 250 003e 0B       		.uleb128 0xb
+ 251 003f 3B       		.uleb128 0x3b
+ 252 0040 0B       		.uleb128 0xb
+ 253 0041 27       		.uleb128 0x27
+ 254 0042 19       		.uleb128 0x19
+ 255 0043 49       		.uleb128 0x49
+ 256 0044 13       		.uleb128 0x13
+ 257 0045 8701     		.uleb128 0x87
+ 258 0047 19       		.uleb128 0x19
+ 259 0048 11       		.uleb128 0x11
+ 260 0049 01       		.uleb128 0x1
+ 261 004a 12       		.uleb128 0x12
+ 262 004b 06       		.uleb128 0x6
+ 263 004c 40       		.uleb128 0x40
+ 264 004d 18       		.uleb128 0x18
+ 265 004e 9742     		.uleb128 0x2117
+ 266 0050 19       		.uleb128 0x19
+ARM GAS  C:\Users\marco\AppData\Local\Temp\ccLlvBlF.s 			page 6
 
 
- 268 0065 3A       		.uleb128 0x3a
- 269 0066 0B       		.uleb128 0xb
- 270 0067 3B       		.uleb128 0x3b
- 271 0068 05       		.uleb128 0x5
- 272 0069 49       		.uleb128 0x49
- 273 006a 13       		.uleb128 0x13
- 274 006b 3F       		.uleb128 0x3f
- 275 006c 19       		.uleb128 0x19
- 276 006d 3C       		.uleb128 0x3c
- 277 006e 19       		.uleb128 0x19
- 278 006f 00       		.byte	0
- 279 0070 00       		.byte	0
- 280 0071 08       		.uleb128 0x8
- 281 0072 35       		.uleb128 0x35
- 282 0073 00       		.byte	0
- 283 0074 49       		.uleb128 0x49
- 284 0075 13       		.uleb128 0x13
- 285 0076 00       		.byte	0
- 286 0077 00       		.byte	0
- 287 0078 09       		.uleb128 0x9
- 288 0079 2E       		.uleb128 0x2e
- 289 007a 00       		.byte	0
- 290 007b 3F       		.uleb128 0x3f
- 291 007c 19       		.uleb128 0x19
- 292 007d 3C       		.uleb128 0x3c
- 293 007e 19       		.uleb128 0x19
- 294 007f 6E       		.uleb128 0x6e
- 295 0080 0E       		.uleb128 0xe
- 296 0081 03       		.uleb128 0x3
- 297 0082 0E       		.uleb128 0xe
- 298 0083 3A       		.uleb128 0x3a
- 299 0084 0B       		.uleb128 0xb
- 300 0085 3B       		.uleb128 0x3b
- 301 0086 0B       		.uleb128 0xb
- 302 0087 00       		.byte	0
- 303 0088 00       		.byte	0
- 304 0089 00       		.byte	0
- 305              		.section	.debug_aranges,"",%progbits
- 306 0000 1C000000 		.4byte	0x1c
- 307 0004 0200     		.2byte	0x2
- 308 0006 00000000 		.4byte	.Ldebug_info0
- 309 000a 04       		.byte	0x4
- 310 000b 00       		.byte	0
- 311 000c 0000     		.2byte	0
- 312 000e 0000     		.2byte	0
- 313 0010 00000000 		.4byte	.LFB64
- 314 0014 0A000000 		.4byte	.LFE64-.LFB64
- 315 0018 00000000 		.4byte	0
- 316 001c 00000000 		.4byte	0
- 317              		.section	.debug_ranges,"",%progbits
- 318              	.Ldebug_ranges0:
- 319 0000 00000000 		.4byte	.LFB64
- 320 0004 0A000000 		.4byte	.LFE64
- 321 0008 00000000 		.4byte	0
- 322 000c 00000000 		.4byte	0
- 323              		.section	.debug_line,"",%progbits
- 324              	.Ldebug_line0:
-ARM GAS  C:\Users\marco\AppData\Local\Temp\ccD5gUNY.s 			page 7
+ 267 0051 01       		.uleb128 0x1
+ 268 0052 13       		.uleb128 0x13
+ 269 0053 00       		.byte	0
+ 270 0054 00       		.byte	0
+ 271 0055 06       		.uleb128 0x6
+ 272 0056 898201   		.uleb128 0x4109
+ 273 0059 00       		.byte	0
+ 274 005a 11       		.uleb128 0x11
+ 275 005b 01       		.uleb128 0x1
+ 276 005c 31       		.uleb128 0x31
+ 277 005d 13       		.uleb128 0x13
+ 278 005e 00       		.byte	0
+ 279 005f 00       		.byte	0
+ 280 0060 07       		.uleb128 0x7
+ 281 0061 34       		.uleb128 0x34
+ 282 0062 00       		.byte	0
+ 283 0063 03       		.uleb128 0x3
+ 284 0064 0E       		.uleb128 0xe
+ 285 0065 3A       		.uleb128 0x3a
+ 286 0066 0B       		.uleb128 0xb
+ 287 0067 3B       		.uleb128 0x3b
+ 288 0068 05       		.uleb128 0x5
+ 289 0069 49       		.uleb128 0x49
+ 290 006a 13       		.uleb128 0x13
+ 291 006b 3F       		.uleb128 0x3f
+ 292 006c 19       		.uleb128 0x19
+ 293 006d 3C       		.uleb128 0x3c
+ 294 006e 19       		.uleb128 0x19
+ 295 006f 00       		.byte	0
+ 296 0070 00       		.byte	0
+ 297 0071 08       		.uleb128 0x8
+ 298 0072 35       		.uleb128 0x35
+ 299 0073 00       		.byte	0
+ 300 0074 49       		.uleb128 0x49
+ 301 0075 13       		.uleb128 0x13
+ 302 0076 00       		.byte	0
+ 303 0077 00       		.byte	0
+ 304 0078 09       		.uleb128 0x9
+ 305 0079 2E       		.uleb128 0x2e
+ 306 007a 00       		.byte	0
+ 307 007b 3F       		.uleb128 0x3f
+ 308 007c 19       		.uleb128 0x19
+ 309 007d 3C       		.uleb128 0x3c
+ 310 007e 19       		.uleb128 0x19
+ 311 007f 6E       		.uleb128 0x6e
+ 312 0080 0E       		.uleb128 0xe
+ 313 0081 03       		.uleb128 0x3
+ 314 0082 0E       		.uleb128 0xe
+ 315 0083 3A       		.uleb128 0x3a
+ 316 0084 0B       		.uleb128 0xb
+ 317 0085 3B       		.uleb128 0x3b
+ 318 0086 0B       		.uleb128 0xb
+ 319 0087 00       		.byte	0
+ 320 0088 00       		.byte	0
+ 321 0089 00       		.byte	0
+ 322              		.section	.debug_aranges,"",%progbits
+ 323 0000 1C000000 		.4byte	0x1c
+ARM GAS  C:\Users\marco\AppData\Local\Temp\ccLlvBlF.s 			page 7
 
 
- 325 0000 60010000 		.section	.debug_str,"MS",%progbits,1
- 325      02004901 
- 325      00000201 
- 325      FB0E0D00 
- 325      01010101 
- 326              	.LASF6:
- 327 0000 6C6F6E67 		.ascii	"long long int\000"
- 327      206C6F6E 
- 327      6720696E 
- 327      7400
- 328              	.LASF3:
- 329 000e 73686F72 		.ascii	"short unsigned int\000"
- 329      7420756E 
- 329      7369676E 
- 329      65642069 
- 329      6E7400
- 330              	.LASF8:
- 331 0021 756E7369 		.ascii	"unsigned int\000"
- 331      676E6564 
- 331      20696E74 
- 331      00
- 332              	.LASF17:
- 333 002e 6D61696E 		.ascii	"main.c\000"
- 333      2E6300
- 334              	.LASF19:
- 335 0035 6D61696E 		.ascii	"main\000"
- 335      00
- 336              	.LASF18:
- 337 003a 433A5C55 		.ascii	"C:\\Users\\marco\\OneDrive\\Documenti\\PSoC Creator"
- 337      73657273 
- 337      5C6D6172 
- 337      636F5C4F 
- 337      6E654472 
- 338 0068 5C50726F 		.ascii	"\\Prove_PSOC\\LED_GUI.cydsn\000"
- 338      76655F50 
- 338      534F435C 
- 338      4C45445F 
- 338      4755492E 
- 339              	.LASF16:
- 340 0082 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 340      43313120 
- 340      352E342E 
- 340      31203230 
- 340      31363036 
- 341 00b5 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 341      20726576 
- 341      6973696F 
- 341      6E203233 
- 341      37373135 
- 342 00e8 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 342      66756E63 
- 342      74696F6E 
- 342      2D736563 
- 342      74696F6E 
- 343              	.LASF5:
- 344 0110 6C6F6E67 		.ascii	"long unsigned int\000"
- 344      20756E73 
-ARM GAS  C:\Users\marco\AppData\Local\Temp\ccD5gUNY.s 			page 8
-
-
- 344      69676E65 
- 344      6420696E 
+ 324 0004 0200     		.2byte	0x2
+ 325 0006 00000000 		.4byte	.Ldebug_info0
+ 326 000a 04       		.byte	0x4
+ 327 000b 00       		.byte	0
+ 328 000c 0000     		.2byte	0
+ 329 000e 0000     		.2byte	0
+ 330 0010 00000000 		.4byte	.LFB64
+ 331 0014 14000000 		.4byte	.LFE64-.LFB64
+ 332 0018 00000000 		.4byte	0
+ 333 001c 00000000 		.4byte	0
+ 334              		.section	.debug_ranges,"",%progbits
+ 335              	.Ldebug_ranges0:
+ 336 0000 00000000 		.4byte	.LFB64
+ 337 0004 14000000 		.4byte	.LFE64
+ 338 0008 00000000 		.4byte	0
+ 339 000c 00000000 		.4byte	0
+ 340              		.section	.debug_line,"",%progbits
+ 341              	.Ldebug_line0:
+ 342 0000 6D010000 		.section	.debug_str,"MS",%progbits,1
+ 342      02005501 
+ 342      00000201 
+ 342      FB0E0D00 
+ 342      01010101 
+ 343              	.LASF6:
+ 344 0000 6C6F6E67 		.ascii	"long long int\000"
+ 344      206C6F6E 
+ 344      6720696E 
  344      7400
- 345              	.LASF7:
- 346 0122 6C6F6E67 		.ascii	"long long unsigned int\000"
- 346      206C6F6E 
- 346      6720756E 
+ 345              	.LASF3:
+ 346 000e 73686F72 		.ascii	"short unsigned int\000"
+ 346      7420756E 
  346      7369676E 
  346      65642069 
- 347              	.LASF21:
- 348 0139 55415254 		.ascii	"UART_Start\000"
- 348      5F537461 
- 348      727400
- 349              	.LASF1:
- 350 0144 756E7369 		.ascii	"unsigned char\000"
- 350      676E6564 
- 350      20636861 
- 350      7200
- 351              	.LASF13:
- 352 0152 63686172 		.ascii	"char\000"
+ 346      6E7400
+ 347              	.LASF8:
+ 348 0021 756E7369 		.ascii	"unsigned int\000"
+ 348      676E6564 
+ 348      20696E74 
+ 348      00
+ 349              	.LASF19:
+ 350 002e 6D61696E 		.ascii	"main.c\000"
+ 350      2E6300
+ 351              	.LASF21:
+ 352 0035 6D61696E 		.ascii	"main\000"
  352      00
- 353              	.LASF4:
- 354 0157 6C6F6E67 		.ascii	"long int\000"
- 354      20696E74 
- 354      00
- 355              	.LASF12:
- 356 0160 646F7562 		.ascii	"double\000"
- 356      6C6500
- 357              	.LASF20:
- 358 0167 49544D5F 		.ascii	"ITM_RxBuffer\000"
- 358      52784275 
- 358      66666572 
- 358      00
- 359              	.LASF0:
- 360 0174 7369676E 		.ascii	"signed char\000"
- 360      65642063 
- 360      68617200 
- 361              	.LASF14:
- 362 0180 6C6F6E67 		.ascii	"long double\000"
- 362      20646F75 
- 362      626C6500 
- 363              	.LASF9:
- 364 018c 5F5F696E 		.ascii	"__int32_t\000"
- 364      7433325F 
- 364      7400
- 365              	.LASF11:
- 366 0196 666C6F61 		.ascii	"float\000"
- 366      7400
- 367              	.LASF2:
- 368 019c 73686F72 		.ascii	"short int\000"
- 368      7420696E 
- 368      7400
- 369              	.LASF10:
- 370 01a6 696E7433 		.ascii	"int32_t\000"
- 370      325F7400 
- 371              	.LASF15:
- 372 01ae 73697A65 		.ascii	"sizetype\000"
-ARM GAS  C:\Users\marco\AppData\Local\Temp\ccD5gUNY.s 			page 9
+ 353              	.LASF20:
+ 354 003a 433A5C55 		.ascii	"C:\\Users\\marco\\OneDrive\\Documenti\\PSoC Creator"
+ 354      73657273 
+ 354      5C6D6172 
+ 354      636F5C4F 
+ 354      6E654472 
+ 355 0068 5C50726F 		.ascii	"\\Prove_PSOC\\LED_GUI.cydsn\000"
+ 355      76655F50 
+ 355      534F435C 
+ 355      4C45445F 
+ 355      4755492E 
+ 356              	.LASF18:
+ARM GAS  C:\Users\marco\AppData\Local\Temp\ccLlvBlF.s 			page 8
 
 
- 372      74797065 
- 372      00
- 373              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 357 0082 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 357      43313120 
+ 357      352E342E 
+ 357      31203230 
+ 357      31363036 
+ 358 00b5 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 358      20726576 
+ 358      6973696F 
+ 358      6E203233 
+ 358      37373135 
+ 359 00e8 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 359      66756E63 
+ 359      74696F6E 
+ 359      2D736563 
+ 359      74696F6E 
+ 360              	.LASF5:
+ 361 0110 6C6F6E67 		.ascii	"long unsigned int\000"
+ 361      20756E73 
+ 361      69676E65 
+ 361      6420696E 
+ 361      7400
+ 362              	.LASF7:
+ 363 0122 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 363      206C6F6E 
+ 363      6720756E 
+ 363      7369676E 
+ 363      65642069 
+ 364              	.LASF17:
+ 365 0139 6973725F 		.ascii	"isr_RX_StartEx\000"
+ 365      52585F53 
+ 365      74617274 
+ 365      457800
+ 366              	.LASF16:
+ 367 0148 55415254 		.ascii	"UART_Start\000"
+ 367      5F537461 
+ 367      727400
+ 368              	.LASF1:
+ 369 0153 756E7369 		.ascii	"unsigned char\000"
+ 369      676E6564 
+ 369      20636861 
+ 369      7200
+ 370              	.LASF13:
+ 371 0161 63686172 		.ascii	"char\000"
+ 371      00
+ 372              	.LASF4:
+ 373 0166 6C6F6E67 		.ascii	"long int\000"
+ 373      20696E74 
+ 373      00
+ 374              	.LASF12:
+ 375 016f 646F7562 		.ascii	"double\000"
+ 375      6C6500
+ 376              	.LASF22:
+ 377 0176 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 377      52784275 
+ 377      66666572 
+ 377      00
+ 378              	.LASF0:
+ARM GAS  C:\Users\marco\AppData\Local\Temp\ccLlvBlF.s 			page 9
+
+
+ 379 0183 7369676E 		.ascii	"signed char\000"
+ 379      65642063 
+ 379      68617200 
+ 380              	.LASF14:
+ 381 018f 6C6F6E67 		.ascii	"long double\000"
+ 381      20646F75 
+ 381      626C6500 
+ 382              	.LASF9:
+ 383 019b 5F5F696E 		.ascii	"__int32_t\000"
+ 383      7433325F 
+ 383      7400
+ 384              	.LASF11:
+ 385 01a5 666C6F61 		.ascii	"float\000"
+ 385      7400
+ 386              	.LASF2:
+ 387 01ab 73686F72 		.ascii	"short int\000"
+ 387      7420696E 
+ 387      7400
+ 388              	.LASF10:
+ 389 01b5 696E7433 		.ascii	"int32_t\000"
+ 389      325F7400 
+ 390              	.LASF15:
+ 391 01bd 73697A65 		.ascii	"sizetype\000"
+ 391      74797065 
+ 391      00
+ 392              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

@@ -356,7 +356,20 @@
 </userData>
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
-<OpenDocs />
+<OpenDocs>
+<name v=".\LED_GUI.cydsn\LED_GUI.cydwr" />
+<name v=".\LED_GUI.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\LED_GUI.cydsn\main.c" />
+<name v=".\LED_GUI.cydsn\Interrupt_Routines.h" />
+<name v=".\LED_GUI.cydsn\Interrupt_Routines.c" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1018, 487" SelectedTabbedMdiWindow="89348820-0f4a-45e2-9e8c-b1ae1b3ea624"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="95260ef6-06ef-4cf2-adde-5a8223b25bc1" /><DocumentWindow Key="C:\Users\marco\OneDrive\Documenti\PSoC Creator\Prove_PSOC\LED_GUI.cydsn\LED_GUI.cydwr" Guid="8acd01fc-d3a5-40c1-8f44-4148118a96b0" /><DocumentWindow Key="C:\Users\marco\OneDrive\Documenti\PSoC Creator\Prove_PSOC\LED_GUI.cydsn\TopDesign\TopDesign.cysch" Guid="0f65aee1-3326-4a52-a47c-b51829150274" /><DocumentWindow Key="C:\Users\marco\OneDrive\Documenti\PSoC Creator\Prove_PSOC\LED_GUI.cydsn\main.c" Guid="89348820-0f4a-45e2-9e8c-b1ae1b3ea624" /><DocumentWindow Key="C:\Users\marco\OneDrive\Documenti\PSoC Creator\Prove_PSOC\LED_GUI.cydsn\Interrupt_Routines.h" Guid="02f00a49-5bc8-4164-80dc-bd1f5cf9668d" /><DocumentWindow Key="C:\Users\marco\OneDrive\Documenti\PSoC Creator\Prove_PSOC\LED_GUI.cydsn\Interrupt_Routines.c" Guid="c690c9f7-ed9d-4f5d-9ed9-2f80558dfb95" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

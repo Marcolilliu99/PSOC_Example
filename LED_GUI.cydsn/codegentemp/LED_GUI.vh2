@@ -2,7 +2,7 @@
 --	Conversion of LED_GUI.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Sun Nov 06 16:12:30 2022
+--	Sun Nov 06 16:59:44 2022
 --
 
 USE cypress.cypress.all;
@@ -44,10 +44,10 @@ SIGNAL \UART:BUART:FinalAddrMode_0\ : bit;
 SIGNAL \UART:BUART:tx_ctrl_mark\ : bit;
 SIGNAL \UART:BUART:reset_sr\ : bit;
 SIGNAL \UART:BUART:HalfDuplexSend_last\ : bit;
-SIGNAL Net_83 : bit;
+SIGNAL Net_101 : bit;
 SIGNAL \UART:BUART:txn\ : bit;
-SIGNAL Net_80 : bit;
-SIGNAL Net_88 : bit;
+SIGNAL Net_105 : bit;
+SIGNAL Net_94 : bit;
 SIGNAL \UART:BUART:rx_interrupt_out\ : bit;
 SIGNAL \UART:BUART:rx_addressmatch\ : bit;
 SIGNAL \UART:BUART:rx_addressmatch1\ : bit;
@@ -189,7 +189,7 @@ SIGNAL \UART:BUART:rx_status_4\ : bit;
 SIGNAL \UART:BUART:rx_status_5\ : bit;
 SIGNAL \UART:BUART:rx_status_6\ : bit;
 SIGNAL \UART:BUART:rx_addr_match_status\ : bit;
-SIGNAL Net_71 : bit;
+SIGNAL Net_98 : bit;
 SIGNAL \UART:BUART:rx_markspace_pre\ : bit;
 SIGNAL \UART:BUART:rx_parity_error_pre\ : bit;
 SIGNAL \UART:BUART:rx_break_status\ : bit;
@@ -279,10 +279,10 @@ SIGNAL \UART:BUART:sRX:MODULE_5:gte\ : bit;
 ATTRIBUTE port_state_att of \UART:BUART:sRX:MODULE_5:gte\:SIGNAL IS 2;
 SIGNAL \UART:BUART:sRX:MODULE_5:lte\ : bit;
 ATTRIBUTE port_state_att of \UART:BUART:sRX:MODULE_5:lte\:SIGNAL IS 2;
-SIGNAL tmpOE__RX_net_0 : bit;
-SIGNAL tmpIO_0__RX_net_0 : bit;
-TERMINAL tmpSIOVREF__RX_net_0 : bit;
-SIGNAL tmpINTERRUPT_0__RX_net_0 : bit;
+SIGNAL tmpOE__Rx_1_net_0 : bit;
+SIGNAL tmpIO_0__Rx_1_net_0 : bit;
+TERMINAL tmpSIOVREF__Rx_1_net_0 : bit;
+SIGNAL tmpINTERRUPT_0__Rx_1_net_0 : bit;
 SIGNAL \UART:BUART:reset_reg\\D\ : bit;
 SIGNAL \UART:BUART:rx_state_1\\D\ : bit;
 SIGNAL \UART:BUART:rx_state_0\\D\ : bit;
@@ -646,8 +646,8 @@ GND_1:cy_annotation_universal_v1_0
 		clock=>\UART:BUART:clock_op\,
 		status=>(\UART:BUART:rx_status_6\, \UART:BUART:rx_status_5\, \UART:BUART:rx_status_4\, \UART:BUART:rx_status_3\,
 			\UART:BUART:rx_status_2\, zero, \UART:BUART:rx_status_0\),
-		interrupt=>Net_88);
-RX:cy_psoc3_pins_v1_10
+		interrupt=>Net_94);
+Rx_1:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"1425177d-0d0e-4468-8bcc-e638e5509a9b",
 		drive_mode=>"001",
 		ibuf_enabled=>"1",
@@ -707,8 +707,8 @@ RX:cy_psoc3_pins_v1_10
 		y=>(zero),
 		fb=>Net_72,
 		analog=>(open),
-		io=>(tmpIO_0__RX_net_0),
-		siovref=>(tmpSIOVREF__RX_net_0),
+		io=>(tmpIO_0__Rx_1_net_0),
+		siovref=>(tmpSIOVREF__Rx_1_net_0),
 		annotation=>(open),
 		in_clock=>zero,
 		in_clock_en=>tmpOE__PIN_INT_LED_net_0,
@@ -716,11 +716,11 @@ RX:cy_psoc3_pins_v1_10
 		out_clock=>zero,
 		out_clock_en=>tmpOE__PIN_INT_LED_net_0,
 		out_reset=>zero,
-		interrupt=>tmpINTERRUPT_0__RX_net_0);
+		interrupt=>tmpINTERRUPT_0__Rx_1_net_0);
 isr_RX:cy_isr_v1_0
 	GENERIC MAP(int_type=>"10",
 		is_nmi=>'0')
-	PORT MAP(int_signal=>Net_88);
+	PORT MAP(int_signal=>Net_94);
 \UART:BUART:reset_reg\:cy_dff
 	PORT MAP(d=>zero,
 		clk=>\UART:BUART:clock_op\,

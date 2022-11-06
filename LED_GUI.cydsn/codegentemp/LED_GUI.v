@@ -1,6 +1,6 @@
 // ======================================================================
 // LED_GUI.v generated from TopDesign.cysch
-// 11/06/2022 at 16:12
+// 11/06/2022 at 16:59
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -273,19 +273,19 @@ endmodule
 // top
 module top ;
 
-          wire  Net_80;
-          wire  Net_79;
-          wire  Net_78;
-          wire  Net_77;
-          wire  Net_83;
-          wire  Net_74;
-          wire  Net_73;
-          wire  Net_71;
-          wire  Net_70;
-          wire  Net_69;
-          wire  Net_68;
+          wire  Net_105;
+          wire  Net_104;
+          wire  Net_103;
+          wire  Net_102;
+          wire  Net_101;
+          wire  Net_100;
+          wire  Net_99;
+          wire  Net_98;
+          wire  Net_97;
+          wire  Net_96;
+          wire  Net_95;
     electrical  Net_6;
-          wire  Net_88;
+          wire  Net_94;
           wire  Net_72;
     electrical  Net_66;
     electrical  Net_1;
@@ -399,16 +399,16 @@ module top ;
         .clock(1'b0),
         .cts_n(1'b0),
         .reset(1'b0),
-        .rts_n(Net_71),
+        .rts_n(Net_98),
         .rx(Net_72),
-        .rx_clk(Net_73),
-        .rx_data(Net_74),
-        .rx_interrupt(Net_88),
-        .tx(Net_83),
-        .tx_clk(Net_77),
-        .tx_data(Net_78),
-        .tx_en(Net_79),
-        .tx_interrupt(Net_80));
+        .rx_clk(Net_99),
+        .rx_data(Net_100),
+        .rx_interrupt(Net_94),
+        .tx(Net_101),
+        .tx_clk(Net_102),
+        .tx_data(Net_103),
+        .tx_en(Net_104),
+        .tx_interrupt(Net_105));
     defparam UART.Address1 = 0;
     defparam UART.Address2 = 0;
     defparam UART.EnIntRXInterrupt = 0;
@@ -422,10 +422,10 @@ module top ;
     defparam UART.RXEnable = 1;
     defparam UART.TXEnable = 0;
 
-	wire [0:0] tmpOE__RX_net;
-	wire [0:0] tmpIO_0__RX_net;
-	wire [0:0] tmpINTERRUPT_0__RX_net;
-	electrical [0:0] tmpSIOVREF__RX_net;
+	wire [0:0] tmpOE__Rx_1_net;
+	wire [0:0] tmpIO_0__Rx_1_net;
+	wire [0:0] tmpINTERRUPT_0__Rx_1_net;
+	electrical [0:0] tmpSIOVREF__Rx_1_net;
 
 	cy_psoc3_pins_v1_10
 		#(.id("1425177d-0d0e-4468-8bcc-e638e5509a9b"),
@@ -480,13 +480,13 @@ module top ;
 		  .ovt_needed(1'b0),
 		  .ovt_slew_control(2'b00),
 		  .input_buffer_sel(2'b00))
-		RX
-		 (.oe(tmpOE__RX_net),
+		Rx_1
+		 (.oe(tmpOE__Rx_1_net),
 		  .y({1'b0}),
 		  .fb({Net_72}),
-		  .io({tmpIO_0__RX_net[0:0]}),
-		  .siovref(tmpSIOVREF__RX_net),
-		  .interrupt({tmpINTERRUPT_0__RX_net[0:0]}),
+		  .io({tmpIO_0__Rx_1_net[0:0]}),
+		  .siovref(tmpSIOVREF__Rx_1_net),
+		  .interrupt({tmpINTERRUPT_0__Rx_1_net[0:0]}),
 		  .in_clock({1'b0}),
 		  .in_clock_en({1'b1}),
 		  .in_reset({1'b0}),
@@ -494,13 +494,13 @@ module top ;
 		  .out_clock_en({1'b1}),
 		  .out_reset({1'b0}));
 
-	assign tmpOE__RX_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
+	assign tmpOE__Rx_1_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
 
 
 	cy_isr_v1_0
 		#(.int_type(2'b10))
 		isr_RX
-		 (.int_signal(Net_88));
+		 (.int_signal(Net_94));
 
 
 

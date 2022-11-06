@@ -1,11 +1,11 @@
 -- Project:   LED_GUI
--- Generated: 11/06/2022 16:12:31
+-- Generated: 11/06/2022 16:59:45
 -- PSoC Creator  4.4
 
 ENTITY LED_GUI IS
     PORT(
         PIN_INT_LED(0)_PAD : OUT std_ulogic;
-        RX(0)_PAD : IN std_ulogic);
+        Rx_1(0)_PAD : IN std_ulogic);
     ATTRIBUTE voltage_VDDABUF OF __DEFAULT__ : ENTITY IS 5e0;
     ATTRIBUTE voltage_VDDA OF __DEFAULT__ : ENTITY IS 5e0;
     ATTRIBUTE voltage_VUSB OF __DEFAULT__ : ENTITY IS 5e0;
@@ -30,9 +30,9 @@ ARCHITECTURE __DEFAULT__ OF LED_GUI IS
     SIGNAL ClockBlock_XTAL : bit;
     SIGNAL ClockBlock_XTAL_32KHZ : bit;
     SIGNAL Net_72 : bit;
-    SIGNAL Net_88 : bit;
+    SIGNAL Net_94 : bit;
     SIGNAL PIN_INT_LED(0)__PA : bit;
-    SIGNAL RX(0)__PA : bit;
+    SIGNAL Rx_1(0)__PA : bit;
     SIGNAL \UART:BUART:control_0\ : bit;
     SIGNAL \UART:BUART:control_1\ : bit;
     SIGNAL \UART:BUART:control_2\ : bit;
@@ -95,8 +95,8 @@ ARCHITECTURE __DEFAULT__ OF LED_GUI IS
     ATTRIBUTE lib_model OF \UART:BUART:rx_load_fifo_split\ : LABEL IS "macrocell1";
     ATTRIBUTE lib_model OF PIN_INT_LED(0) : LABEL IS "iocell1";
     ATTRIBUTE Location OF PIN_INT_LED(0) : LABEL IS "P2[1]";
-    ATTRIBUTE lib_model OF RX(0) : LABEL IS "iocell2";
-    ATTRIBUTE Location OF RX(0) : LABEL IS "P12[6]";
+    ATTRIBUTE lib_model OF Rx_1(0) : LABEL IS "iocell2";
+    ATTRIBUTE Location OF Rx_1(0) : LABEL IS "P12[6]";
     ATTRIBUTE lib_model OF \UART:BUART:rx_counter_load\ : LABEL IS "macrocell2";
     ATTRIBUTE lib_model OF \UART:BUART:rx_postpoll\ : LABEL IS "macrocell3";
     ATTRIBUTE lib_model OF \UART:BUART:rx_status_0\ : LABEL IS "macrocell4";
@@ -579,7 +579,7 @@ BEGIN
             out_clock_en => '1',
             out_reset => '0');
 
-    RX:logicalport
+    Rx_1:logicalport
         GENERIC MAP(
             drive_mode => "001",
             ibuf_enabled => "1",
@@ -651,19 +651,19 @@ BEGIN
             out_reset => open,
             in_clock => open);
 
-    RX(0):iocell
+    Rx_1(0):iocell
         GENERIC MAP(
             in_sync_mode => 2,
             out_sync_mode => 0,
             oe_sync_mode => 0,
-            logicalport => "RX",
+            logicalport => "Rx_1",
             logicalport_pin_id => 0,
             io_capabilities => "0000000000000000000000000000000000000000000000000000000000000101")
         PORT MAP(
-            pa_out => RX(0)__PA,
+            pa_out => Rx_1(0)__PA,
             oe => open,
             fb => Net_72,
-            pad_in => RX(0)_PAD,
+            pad_in => Rx_1(0)_PAD,
             in_clock => ClockBlock_BUS_CLK,
             in_clock_en => '1',
             in_reset => '0',
@@ -879,14 +879,14 @@ BEGIN
             status_2 => open,
             status_1 => open,
             status_0 => \UART:BUART:rx_status_0\,
-            interrupt => Net_88);
+            interrupt => Net_94);
 
     isr_RX:interrupt
         GENERIC MAP(
             int_type => "10",
             is_nmi => 0)
         PORT MAP(
-            interrupt => Net_88,
+            interrupt => Net_94,
             clock => ClockBlock_BUS_CLK);
 
     \UART:BUART:rx_state_2_split\:macrocell
